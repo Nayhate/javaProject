@@ -1,0 +1,9 @@
+package principal.modelos;
+
+public enum StatusVenda {
+	
+		ABERTO,
+		CONCLUIDO,
+		CANCELADO
+
+}

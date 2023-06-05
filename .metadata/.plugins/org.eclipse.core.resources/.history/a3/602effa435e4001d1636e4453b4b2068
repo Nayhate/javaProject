@@ -1,0 +1,61 @@
+package Principal.modulo;
+
+public class Bebida  {
+	
+	//TIPO = Refrigerante, FABRICANTE = Coca-Cola, MARCA = Fanta, TAMANHO = Lata(350ml), SABOR = Laranja.
+	
+	private TipoBebida tipo;
+	private String fabricante;
+	private String marca;
+	private String tamanho;
+	private String sabor;
+	
+	
+	//---------------------------------------------------------//
+	
+	//GETTERS
+	
+	public TipoBebida getTipo() {
+		return tipo;
+	}	
+	public String getFabricante() {
+		return fabricante;
+	}	
+	public String getMarca() {
+		return marca;
+	}	
+	
+	public String getTamanho() {
+		return tamanho;
+	}	
+	
+	public String getSabor() {
+		return sabor;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS
+	
+	public void setSabor(String sabor) {
+		this.sabor = sabor;
+	}
+	public void setTipo(TipoBebida tipo) {
+		this.tipo = tipo;
+	}
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public void setTamanho(String tamanho) {
+		this.tamanho = tamanho;
+	}
+}
+	
+
+	
+
+
+

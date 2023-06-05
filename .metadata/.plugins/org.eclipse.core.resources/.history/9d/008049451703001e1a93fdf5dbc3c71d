@@ -1,0 +1,36 @@
+package principal.controladores;
+
+import principal.modelos.Venda;
+
+public class ControleVenda {
+
+	private static ControleVenda instance;
+	
+	private DAO<Venda> dao = new VendaDAO();
+	
+	private ControleVenda() {}
+	
+	public static synchronized ControleVenda getInstance() {
+		if (instance == null) {
+			instance = new ControleVenda();
+		}
+		return instance;
+	}
+
+	public List<Pedido> listar() {
+		return dao.listar();
+	}
+	
+	public Pedido buscar(Long id) {
+		return dao.buscarPorId(id);
+	}
+	
+	public void adicionar(Pedido pedido) {
+		dao.salvar(pedido);
+	}
+
+	public void cancelar(Pedido pedido) {
+		pedido.setStatus(Status.CANCELADO);
+		dao.atualizar(pedido);
+	}
+}

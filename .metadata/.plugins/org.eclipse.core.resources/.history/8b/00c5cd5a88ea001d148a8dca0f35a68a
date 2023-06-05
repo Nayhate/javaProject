@@ -1,0 +1,49 @@
+package principal.modelos;
+
+public class Produto {
+	
+	private String Nome;
+	private String Sabor;
+	private double Preco;
+	
+	//---------------------------------------------------------//
+	
+	//CONSTRUCT
+	
+	public Produto(String nome,String sabor, double preco) {
+		
+	}
+	
+	//---------------------------------------------------------//
+	
+	// GETTERS 
+	
+	public String getNome() {
+		return Nome;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	public String getSabor() {
+		return Sabor;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS
+	
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+	
+	public void setSabor(String sabor) {
+		Sabor = sabor;
+	}
+	
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+	
+
+	
+}

@@ -1,0 +1,21 @@
+package principal.telas;
+
+public class TelaLogin {
+	public static void mostrar() {
+		
+		System.out.println("Coloque suas credências abaixo.");
+		String login = Prompt.lerLinha();
+		String senha = Prompt.lerLinha();
+
+		ControleDeAcesso.autenticar(login, senha);
+		
+		if (ControleDeAcesso.isUsuarioLogado()) {
+			TelaDeGerenciamento.mostrar();
+		} else {
+			Prompt.linhaEmBranco();
+			System.out.println("Login invalido.");
+			Prompt.linhaEmBranco();
+			Prompt.pressionarEnter();
+
+	}
+}}

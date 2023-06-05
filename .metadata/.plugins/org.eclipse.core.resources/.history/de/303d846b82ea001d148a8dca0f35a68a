@@ -1,0 +1,167 @@
+package principal.telas;
+
+import java.util.List;
+
+import principal.controladores.CadastroProduto;
+import principal.db.Banco;
+import principal.modelos.Produto;
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeProduto {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeProduto.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+		}
+	}
+}
+		
+//Listar <-------------------------------------------------------------------->
+	
+		
+public static void listar() {	
+			
+			Prompt.imprimir("Lista de Produtos");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("----------------------");		
+			
+			for (int i = 0; i < Banco.produtos.size(); i++) {
+			    Produto produto = Banco.produtos.get(i);
+			    Prompt.imprimir("Nome: " + produto.getNome());
+			    Prompt.imprimir("Preço: " + produto.getPreco());
+			    
+			    Prompt.imprimir("----------------------");
+			}	
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();		
+				
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+		}
+}
+		
+//Adicionar <-------------------------------------------------------------------->
+		
+		public static void adicionar() {
+			
+			Prompt.imprimir("Adicionar Produto");
+			Prompt.linhaEmBranco();
+			
+			String nome = Prompt.lerLinha("Informe o Nome: ");
+			double preco = Prompt.lerDecimal("Informe o Preço: ");
+			
+						
+			CadastroProduto.adicionar(new Produto (nome, preco));
+
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}
+			
+}
+		
+//Alterar <-------------------------------------------------------------------->
+		
+		
+public static void alterar() {
+			
+			Prompt.imprimir("Alterar Funcionários");
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+			if (!nomeOriginal.isEmpty()) {
+				Produto produtoAlterar = CadastroProduto.buscar(nomeOriginal);
+				Prompt.linhaEmBranco();
+				if (produtoAlterar != null) {
+					
+					String nome = Prompt.lerLinha("Informe o Nome: ");
+					double preco = Prompt.lerDecimal("Informe o Preço: ");
+					
+					
+					if (!nome.isEmpty()){
+						
+						produtoAlterar.setNome(nome);
+						produtoAlterar.setPreco(preco);
+						
+						CadastroProduto.atualizar(nomeOriginal, produtoAlterar);
+			
+					}
+				} 
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}
+	}
+}
+		
+//Excluir <-------------------------------------------------------------------->
+		
+		public static void excluir() {
+			
+			Prompt.imprimir("Excluir Funcionários");
+				
+				Prompt.linhaEmBranco();
+				String nome = Prompt.lerLinha("Informe o nome original");	
+				
+				if (!nome.isEmpty()) {
+					boolean produtoExcluido = CadastroProduto.excluir(nome);
+					
+					Prompt.linhaEmBranco();
+					if (produtoExcluido) {
+						Prompt.imprimir("Usuario Excluido");
+					}
+				}
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}		
+	}
+}

@@ -1,0 +1,70 @@
+package principal.modelos;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.ControleAcesso;
+import principal.controladores.ControleVenda;
+
+public class Venda {
+
+	public enum Status {
+		ABERTO,
+		CONCLUIDO,
+		CANCELADO
+	}
+	
+	public Integer codigo;
+	public LocalDateTime data;
+	public double total;
+	public Funcionario funcionario;
+	public List<Produto> produtos;
+	public Status status;
+	
+	public Venda() {
+		this.status = Status.ABERTO;
+		this.codigo = ControleVenda.getNovoCodigo();
+		this.funcionario = ControleAcesso.funcionarioLogado;
+		this.produtos = new ArrayList<>(produtos);
+		this.data = LocalDateTime.now();
+		this.total = 0;
+	}
+	
+	public Venda(Integer codigo, Funcionario funcionario) {
+		this();
+		this.codigo = codigo;
+		this.funcionario = funcionario;
+	}	
+	
+	public String getDataLonga() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		return data.format(dtf);
+	}
+	
+	public String getDataCurta() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		return data.format(dtf);
+	}
+
+	public void setData(int dia, int mes, int ano, int hora, int minuto) {
+		this.data = LocalDateTime.of(ano, mes, dia, hora, minuto);
+	}
+	
+	public void adicionarProduto(Produto produto) {
+		total += produto.getPreco();
+		produtos.add(produto);        
+    }
+	
+	public void remover(Produto produto) {
+		this.total -= produto.getPreco();
+		this.produtos.remove(produto);
+	}
+	
+	public static ArrayList<Produto> getProdutos() {
+        return produtos;
+    }
+}
+	
+

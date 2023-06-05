@@ -1,0 +1,5 @@
+package Principal.modulo;
+
+public class Gerente extends Funcionario {
+	
+}

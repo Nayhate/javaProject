@@ -1,0 +1,54 @@
+package principal.telas;
+
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeProduto {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeProduto.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}
+		}}
+		
+	public static void listar() {		
+	}
+	
+	public static void adicionar() {
+		
+	}
+	
+	public static void alterar() {
+		
+	}
+	public static void excluir() {
+		
+	}
+}

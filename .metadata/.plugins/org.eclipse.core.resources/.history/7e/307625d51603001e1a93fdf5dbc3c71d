@@ -1,0 +1,18 @@
+package principal.controladores;
+
+import principal.modelos.Venda;
+import principal.dao.Banco;
+import principal.modelos.Adicional;
+import principal.modelos.Bebida;
+import principal.modelos.Produto;
+
+public class ControleVenda {
+	
+	
+	public static void adicionar(Venda venda) {
+		Banco.vendas.add(venda);
+	}
+
+}
+
+

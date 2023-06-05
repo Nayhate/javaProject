@@ -1,0 +1,60 @@
+package principal.dao;
+
+import java.util.List;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import principal.modelos.Sorvete;
+
+public class SorveteDAO implements DAO<Sorvete> {
+	
+	private EntityManager em;
+	private EntityManagerFactory emf;
+	
+	public SorveteDAO() {
+		emf = Persistence.createEntityManagerFactory("ex_mysql");
+		em = emf.createEntityManager();
+	}
+	
+	
+	public Sorvete buscarPorId(Integer id) {
+		Sorvete sorvete = em.find(Sorvete.class, id);
+		return sorvete;
+	}
+	
+	public List<Sorvete> listar(){
+		List<Sorvete> lista = em.createQuery("from Pessoa", Sorvete.class)
+				               .getResultList();
+		return lista;
+	}
+	
+	public Integer salvar(Sorvete sorvete) {
+		//Gravação da pessoa no banco de dados
+		em.getTransaction().begin();
+		em.persist(sorvete);
+		em.getTransaction().commit();
+		return sorvete.getId();
+	}
+	
+	public Integer atualizar(Sorvete sorvete) {
+		//Atualização da pessoa no banco de dados
+		em.getTransaction().begin();
+		em.merge(sorvete);
+		em.getTransaction().commit();
+		return sorvete.getId();
+	}
+	
+	public void apagar(Integer id) {
+		Sorvete sorvete = em.find(Sorvete.class, id);
+		em.getTransaction().begin();
+		em.remove(sorvete);
+		em.getTransaction().commit();
+	}
+	
+	public void close() {
+		em.close();
+		emf.close();	
+	}
+
+}

@@ -1,0 +1,57 @@
+package principal.modelos;
+
+public class Produto {
+	
+	private String Nome;
+	private String Sabor;
+	private double Preco;
+	private int id;
+	
+	//---------------------------------------------------------//
+	
+	//CONSTRUCT
+	
+	public Produto(String nome, String sabor, double preco, int id) {
+		this.Nome = nome;
+		this.Sabor = sabor;
+		this.Preco = preco;
+		this.id = id;
+		
+	}
+	
+	//---------------------------------------------------------//
+	
+	// GETTERS 
+	
+	public int getId() {
+		return id;
+	}
+	public String getNome() {
+		return Nome;
+	}
+	public String getSabor() {
+		return Sabor;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS
+	
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+	
+	public void setSabor(String sabor) {
+		Sabor = sabor;
+	}
+	
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+}

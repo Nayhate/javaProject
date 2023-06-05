@@ -1,0 +1,62 @@
+package principal.modelos;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.ControleAcesso;
+import principal.controladores.ControleVenda;
+import principal.db.Banco;
+import principal.util.Prompt;
+
+public class Venda {
+	
+	private Funcionario funcionario;
+	private Integer codigo;
+	private double total;
+	private LocalDateTime data;
+	
+		
+	public Venda(Funcionario funcionario, Integer codigo, double total, LocalDateTime data) {
+		super();
+		this.funcionario = funcionario;
+		this.codigo = codigo;
+		this.total = total;
+		this.data = data;
+	}
+	
+//GETTERS ------------------------------------------------
+	
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}	
+	public Integer getCodigo() {
+		return codigo;
+	}	
+	public double getTotal() {
+		return total;
+	}
+	public LocalDateTime getData() {
+		return data;
+	}
+	
+	
+//SETTERS -----------------------------------------------
+	
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
+	public void setTotal(double total) {
+		this.total = total;
+	}
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+	
+}
+	
+

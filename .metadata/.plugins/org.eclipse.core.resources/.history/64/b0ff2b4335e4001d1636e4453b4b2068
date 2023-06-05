@@ -1,0 +1,52 @@
+package principal.telas;
+
+public class TelaDeGerenciamentoDeFuncionario {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		System.out.println("Opção 1 lista de funcinários.");
+		System.out.println("Opção 2 adicionar funcionário.");
+		System.out.println("Opção 3 alterar funcionário.");
+		System.out.println("Opção 4 excluir funcionário.");
+		System.out.println("Opção 5 voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeFuncionario.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeFuncionario.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeFuncionario.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeFuncionario.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}}
+		}
+		
+	public static void listar() {		
+	}
+	
+	public static void adicionar() {
+		
+	}
+	
+	public static void alterar() {
+		
+	}
+	public static void excluir() {
+		
+	}
+}

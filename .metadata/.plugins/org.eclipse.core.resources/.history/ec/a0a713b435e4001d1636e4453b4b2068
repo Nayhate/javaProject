@@ -1,0 +1,45 @@
+package Principal.modulo;
+
+public enum TipoBebida {
+
+		AGUA_COM_GAS,
+		AGUA_SEM_GAS,
+		REFRIGERANTE,
+		SUCO,
+	
+}
+
+  /* modelos:
+   * 1-bebida
+   * 2-tipo bebida
+   * 3-sorvete
+   * 4-adicionais
+   * 5-pedido (criar)
+   * 6-produto
+   * 7-funcionario
+   * 8-gerente
+   * 9-atendente
+   * 
+   * banco de dados:
+   * 
+   * 
+   * telas:
+   * 1-login
+   * 2-principal
+   * 3-pedido
+   * 4-vendas
+   * 5-cadastro (crud produto e funcionario)
+   * 
+   * 
+   * 
+   * 
+   *
+   *
+   *
+   *
+   *
+   */
+
+
+
+

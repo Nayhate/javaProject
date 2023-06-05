@@ -1,0 +1,92 @@
+package principal.modelos;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.ControleAcesso;
+import principal.controladores.ControleVenda;
+
+public class Venda {
+
+	public enum Status {
+		ABERTO,
+		CONCLUIDO,
+		CANCELADO
+	}
+	
+	public Integer codigo;
+	public LocalDateTime data;
+	public double total;
+	public Funcionario funcionario;
+	public List<Produto> produtos;
+	public Status status;
+	
+	public Venda() {
+		this.status = Status.ABERTO;
+		this.codigo = ControleVenda.getNovoCodigo();
+		this.funcionario = ControleAcesso.funcionarioLogado;
+		this.produtos = new ArrayList<>();
+		this.data = LocalDateTime.now();
+		this.total = 0;
+	}
+	
+	public Venda(Integer codigo, Funcionario funcionario) {
+		this();
+		this.codigo = codigo;
+		this.funcionario = funcionario;
+	}	
+	
+	public Venda(Integer codigo2, String nome) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getDataLonga() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		return data.format(dtf);
+	}
+	
+	public String getDataCurta() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		return data.format(dtf);
+	}
+
+	public void setData(int dia, int mes, int ano, int hora, int minuto) {
+		this.data = LocalDateTime.of(ano, mes, dia, hora, minuto);
+	}
+	
+	public void adicionar(Produto produto) {
+		this.total += produto.getPreco();
+		this.produtos.add(produto);
+	}
+	
+	public void remover(Produto produto) {
+		this.total -= produto.getPreco();
+		this.produtos.remove(produto);
+	}
+	
+	@Override
+	public String toString() {
+		return "Pedido {codigo = "+ codigo + ", status = "+ status + ", data = " + getDataCurta() + ", total = " + total 
+				+ ", " + funcionario 
+				+ ", " + produtos
+				+ "}";
+	}
+	
+	public String toCSV() {
+		String jsProdutos = "";
+		for (int i = 0; i < produtos.size(); i++) {
+			jsProdutos += (i > 0 ? "&" : "") + produtos.get(i).toJS();
+		}
+        return codigo + ";" + status + ";" + getDataLonga() + ";" + total 
+				+ ";" + funcionario.toJS()
+				+ ";[" + jsProdutos + "]";
+	}
+
+	public void adicionar(String nome) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+

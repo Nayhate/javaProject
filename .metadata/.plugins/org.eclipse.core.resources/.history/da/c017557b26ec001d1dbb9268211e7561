@@ -1,0 +1,46 @@
+package principal.db;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import principal.modelos.Sorvete;
+import principal.modelos.StatusVenda;
+import principal.modelos.TipoBebida;
+import principal.controladores.ControleVenda;
+import principal.modelos.Bebida;
+import principal.modelos.Funcionario;
+import principal.modelos.Venda;
+
+
+
+public class Banco {
+	
+	public static List<Funcionario> funcionarios = new ArrayList<>();
+	public static List<Sorvete> sorvetes = new ArrayList<>();
+	public static List<Bebida> bebidas = new ArrayList<>();
+	public static List<Venda> vendas = new ArrayList<>();
+
+
+	
+	public static void gerarDadosTemporarios() {
+
+		Funcionario funcionario = new Funcionario("11/11/2011", "8:00","16:00", 1500, "Claudio","111.111.111","9999-9999","claudiomendez@gmail.com","claumz11","20111111");
+		funcionarios.add(funcionario);
+		funcionarios.add(new Funcionario("22/12/2012", "7:00","15:00", 3000, "Renata","222.222.222","8888-8888","renatamendonça55@gmail.com","renama12","20121222"));
+				
+
+		Sorvete sorvete = new Sorvete("MilkShake", "Chocolate", 15);
+		sorvetes.add(sorvete);
+		
+		Bebida bebida = new Bebida("Fanta", "Laranja", 5, TipoBebida.REFRIGERANTE, "Coca-Cola", "Fanta", "600ml");
+		bebidas.add(bebida);
+
+		
+		Integer codigo = ControleVenda.getNovoCodigo();
+		Venda venda = new Venda(StatusVenda.CONCLUIDO, codigo, LocalDateTime.now(), funcionario, null, codigo);
+		venda.adicionar(bebida);
+		venda.setStatus(StatusVenda.CONCLUIDO);
+		vendas.add(venda);
+	}
+}

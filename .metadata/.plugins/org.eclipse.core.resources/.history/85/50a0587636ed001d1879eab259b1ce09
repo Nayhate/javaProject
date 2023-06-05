@@ -1,0 +1,43 @@
+package principal.modelos;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.ControleAcesso;
+import principal.controladores.ControleVenda;
+
+public class Venda {
+
+	public enum Status {
+		ABERTO,
+		CONCLUIDO,
+		CANCELADO
+	}
+
+	    private ArrayList<Produto> produtos;
+	    private double total;
+		public Status Status;
+		public Integer codigo;
+
+	    public Venda() {
+	        produtos = new ArrayList<>();
+	        total = 0.0;
+	    }
+
+	    public void addProduto(Produto produto) {
+	        produtos.add(produto);
+	        total += produto.getPreco();
+	    }
+
+	    public double getTotal() {
+	        return total;
+	    }
+
+	    public ArrayList<Produto> getProdutos() {
+	        return produtos;
+	    }
+	}
+	
+

@@ -1,0 +1,192 @@
+package principal.telas;
+
+import principal.controladores.CadastroFuncionario;
+import principal.db.Banco;
+import principal.modelos.Funcionario;
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeProduto {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeProduto.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+		}
+	}
+}
+		
+//Listar <-------------------------------------------------------------------->
+	
+		
+public static void listar() {	
+			
+			Prompt.imprimir("Lista de Produtos");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("----------------------");		
+			
+			for (int i = 0; i < Banco.produtos.size(); i++) {
+			    Produto produto = Banco.produtos.get(i);
+			    Prompt.imprimir("CPF: " + produto.getCPF());
+			    Prompt.imprimir("Nome: " + produto.getNome());
+			    Prompt.imprimir("E-mail: " + produto.getEmail());
+			    Prompt.imprimir("Telefone: " + produto.getTelefone());
+			    Prompt.imprimir("Admissão: " + produto.getDataAdmissao());	
+			    Prompt.imprimir("Salário: R$" + produto.getSalario());
+			    Prompt.imprimir("Entrada: " + produto.getHorarioEntrada() + "h");
+			    Prompt.imprimir("Saida: " + produto.getHorarioSaida() + "h");
+			    
+			    Prompt.imprimir("----------------------");
+			}	
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();		
+				
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+		}
+}
+		
+//Adicionar <-------------------------------------------------------------------->
+		
+		public static void adicionar() {
+			
+			Prompt.imprimir("Adicionar Funcionário");
+			Prompt.linhaEmBranco();
+			
+			String adimissao = Prompt.lerLinha("Informe a Data de Admissão: ");
+			String entrada = Prompt.lerLinha("Informe o Horário de Entrada: ");
+			String saida = Prompt.lerLinha("Informe o Horário de Saída: ");
+			double salario = Prompt.lerDecimal("Informe o Salário: ");
+			String nome = Prompt.lerLinha("Informe o Nome: ");
+			String cpf = Prompt.lerLinha("Informe o CPF: ");
+			String telefone = Prompt.lerLinha("Informe o Telefone: ");
+			String email = Prompt.lerLinha("Informe o e-mail: ");
+			String login = Prompt.lerLinha("Informe o Login: ");
+			String senha = Prompt.lerLinha("Informe o Senha: ");
+			
+			CadastroFuncionario.adicionar(new Funcionario (adimissao, entrada, saida, salario, nome, cpf, telefone, email, login, senha));
+
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}
+			
+}
+		
+//Alterar <-------------------------------------------------------------------->
+		
+		
+public static void alterar() {
+			
+			Prompt.imprimir("Alterar Funcionários");
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+			if (!nomeOriginal.isEmpty()) {
+				Funcionario funcionarioAlterar = CadastroFuncionario.buscar(nomeOriginal);
+				Prompt.linhaEmBranco();
+				if (funcionarioAlterar != null) {
+					String adimissao = Prompt.lerLinha("Informe a Data de Admissão: ");
+					String entrada = Prompt.lerLinha("Informe o Horário de Entrada: ");
+					String saida = Prompt.lerLinha("Informe o Horário de Saída: ");
+					double salario = Prompt.lerDecimal("Informe o Salário: ");
+					String nome = Prompt.lerLinha("Informe o Nome: ");
+					String cpf = Prompt.lerLinha("Informe o CPF: ");
+					String telefone = Prompt.lerLinha("Informe o Telefone: ");
+					String email = Prompt.lerLinha("Informe o e-mail: ");
+					String login = Prompt.lerLinha("Informe o Login: ");
+					String senha = Prompt.lerLinha("Informe o Senha: ");
+					
+					if (!nome.isEmpty() && !cpf.isEmpty() 
+							&& !login.isEmpty() && !senha.isEmpty()){
+						funcionarioAlterar.setDataAdmissao(adimissao);
+						funcionarioAlterar.setHorarioEntrada(entrada);
+						funcionarioAlterar.setHorarioSaida(saida);
+						funcionarioAlterar.setSalario(salario);
+						funcionarioAlterar.setNome(nome);
+						funcionarioAlterar.setCPF(cpf);
+						funcionarioAlterar.setTelefone(telefone);
+						funcionarioAlterar.setEmail(email);
+						funcionarioAlterar.setLogin(login);
+						funcionarioAlterar.setSenha(senha);
+						
+						CadastroFuncionario.atualizar(nomeOriginal, funcionarioAlterar);
+			
+					}
+				} 
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}
+	}
+}
+		
+//Excluir <-------------------------------------------------------------------->
+		
+		public static void excluir() {
+			
+			Prompt.imprimir("Excluir Funcionários");
+				
+				Prompt.linhaEmBranco();
+				String nome = Prompt.lerLinha("Informe o nome original");	
+				
+				if (!nome.isEmpty()) {
+					boolean funcionarioExcluido = CadastroFuncionario.excluir(nome);
+					
+					Prompt.linhaEmBranco();
+					if (funcionarioExcluido) {
+						Prompt.imprimir("Usuario Excluido");
+					}
+				}
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				
+			}		
+	}
+}

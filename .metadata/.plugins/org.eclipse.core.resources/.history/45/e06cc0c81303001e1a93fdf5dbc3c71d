@@ -1,0 +1,46 @@
+package principal.dao;
+
+import java.util.List;
+
+import principal.modelos.Produto;
+
+public class ProdutoDAO implements DAO<Produto> {
+
+	@Override
+	public Produto buscarPorId(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Produto> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer salvar(Produto entidade) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer atualizar(Produto entidade) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void apagar(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void close() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}	

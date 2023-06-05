@@ -1,0 +1,82 @@
+package principal.telas;
+
+import principal.controladores.ControleVenda;
+import principal.db.Banco;
+import principal.modelos.Venda;
+import principal.modelos.Venda.Status;
+import principal.util.Prompt;
+
+public class TelaDeRealizarVenda {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Realizar nova Venda.");
+		Prompt.imprimir("[2] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1:{
+				TelaDeRealizarVenda.selecionarProdutos();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}
+		}
+	}
+
+		private static void selecionarProdutos() {
+
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("Lista de Produtos");
+			
+			if (Banco.produtos.isEmpty()) {
+				Prompt.imprimir(Mensagem.MSG_NENHUM_PRODUTO); 
+			} else {
+				for (Produto produto : Banco.produtos) {
+					Prompt.imprimir(produto);
+				}
+			}
+			
+			Prompt.linhaEmBranco();
+			String nome = Prompt.lerLinha(Mensagem.MSG_INFORME_NOME);	
+			
+			if (!nome.isEmpty()) {
+				Produto produto = CadastroDeProdutos.buscar(nome);
+				
+				if (produto != null) {
+					ControleDePedidos.adicionar(produto);
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_PRODUTO_SELECIONADO);
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_SELECIONAR_MAIS);
+					Prompt.imprimir(Mensagem.MSG_SIM);
+					Prompt.imprimir(Mensagem.MSG_NAO);
+					int opcao = Prompt.lerInteiro();
+					if (opcao == 1) {
+						TelaDeVendas.selecionarProdutos();
+					}
+				} else {
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_PRODUTO_NAO_ENCONTRADO);
+					Prompt.linhaEmBranco();
+					Prompt.pressionarEnter();
+				}
+			}
+			TelaDeVendas.mostrar();
+		}
+
+		private static void finalizarVenda() {
+			Venda venda = ControleVenda.venda;
+			venda.status = Status.CONCLUIDO;
+			ControleVenda.adicionar(venda);
+			ControleVenda.venda = null;
+			TelaDeGerenciamentoDeVenda.listar();
+		}
+	}
+
+	}
+}

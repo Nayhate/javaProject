@@ -1,0 +1,86 @@
+package principal.modelos;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.ControleVenda;
+
+public class Venda {
+
+	
+	private StatusVenda status;
+	private Integer codigo;
+	private LocalDateTime data;
+	private Funcionario atendente;
+	private List<Produto> produtos;
+	private double total;
+	
+	public Venda(StatusVenda status, Integer codigo, LocalDateTime data, Funcionario atendente,
+			List<Produto> produtos, double total) {
+		super();
+		this.status = StatusVenda.ABERTO;
+		this.codigo = ControleVenda.getNovoCodigo();
+		this.data = LocalDateTime.now();
+		this.atendente = atendente;
+		this.produtos = new ArrayList<>();
+		this.total = total;
+	}
+
+	//GETTER <--------------------------------------------->
+	
+	public StatusVenda getStatus() {
+		return status;
+	}
+	
+	public Integer getCodigo() {
+		return codigo;
+	}
+	
+	public LocalDateTime getData() {
+		return data;
+	}
+	
+	public Funcionario getAtendente() {
+		return atendente;
+	}
+	
+	public List<Produto> getProdutos() {
+		return produtos;
+	}
+	
+	public double getTotal() {
+		return total;
+	}
+	
+	//SETTER <--------------------------------------------->
+	
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
+	public void setStatus(StatusVenda status) {
+		this.status = status;
+	}
+	public void setAtendente(Funcionario atendente) {
+		this.atendente = atendente;
+	}
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+	public void setTotal(double total) {
+		this.total = total;
+	}
+	
+	//Functions <-------------------------------------------->
+	
+	public void adicionar(Produto produto) {
+		this.total += produto.getPreco();
+		this.produtos.add(produto);
+	}
+
+	
+
+}

@@ -1,0 +1,27 @@
+package telas;
+
+public class TelaDeRealizarVenda {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		System.out.println("Opção 1 realizar venda.");
+		System.out.println("Opção 2 voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1:{
+				TelaDeRealizarVenda.adicionar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}
+		}}
+
+	public static void adicionar() {
+		
+	}
+}

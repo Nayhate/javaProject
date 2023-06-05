@@ -1,0 +1,58 @@
+package principal.modelos;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+
+@Entity
+public class Produto {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String Nome;
+	private String Sabor;
+	private double Preco;
+	
+	//---------------------------------------------------------//
+	
+	//CONSTRUCT
+	
+	public Produto(String nome, String sabor, double preco) {
+		this.Nome = nome;
+		this.Sabor = sabor;
+		this.Preco = preco;
+		
+	}
+	
+	//---------------------------------------------------------//
+	
+	// GETTERS 
+	
+	public String getNome() {
+		return Nome;
+	}
+	public String getSabor() {
+		return Sabor;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS
+	
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+	
+	public void setSabor(String sabor) {
+		Sabor = sabor;
+	}
+	
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+}

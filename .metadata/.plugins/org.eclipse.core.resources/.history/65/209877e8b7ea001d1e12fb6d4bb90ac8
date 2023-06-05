@@ -1,0 +1,223 @@
+package principal.telas;
+
+import principal.controladores.CadastroProduto;
+import principal.db.Banco;
+import principal.modelos.Bebida;
+import principal.modelos.Produto;
+import principal.modelos.Sorvete;
+import principal.modelos.TipoBebida;
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeProduto {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeProduto.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+		}
+	}
+}
+		
+//Listar <-------------------------------------------------------------------->
+	
+		
+public static void listar() {	
+			
+			Prompt.imprimir("Lista de Produtos");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("----------------------");	
+			
+			Prompt.imprimir("[1] Listar Sorvete.");
+			Prompt.imprimir("[2] Listar Bebida.");
+			Prompt.imprimir("[3] Sair.");
+			Integer selection = Prompt.lerInteiro();
+			
+			if(selection == 1) {						
+			
+				for (int i = 0; i < Banco.sorvetes.size(); i++) {
+					Sorvete sorvete = Banco.sorvetes.get(i);
+					Prompt.imprimir("Nome: " + sorvete.getNome());
+					Prompt.imprimir("Sabor: " + sorvete.getSabor());
+					Prompt.imprimir("Preço: R$" + sorvete.getPreco());
+										
+					Prompt.imprimir("----------------------");
+				}	
+				
+			}if(selection == 2) {
+				
+				for (int i = 0; i < Banco.bebidas.size(); i++) {
+					Bebida bebida = Banco.bebidas.get(i);
+					Prompt.imprimir("Nome: " + bebida.getNome());
+					Prompt.imprimir("Sabor: " + bebida.getSabor());
+					Prompt.imprimir("Preço: R$" + bebida.getPreco());
+					Prompt.imprimir("TIPO: " + bebida.getTipo());
+					Prompt.imprimir("Fabricante: " + bebida.getFabricante());
+					Prompt.imprimir("Marca: " + bebida.getMarca());
+					Prompt.imprimir("Tamanho: " + bebida.getTamanho());
+					
+					Prompt.imprimir("----------------------");
+				}	
+				
+			}if(selection == 3) {
+				TelaDeGerenciamentoDeProduto.mostrar();
+			}
+			
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();		
+				
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+			}
+}
+		
+//Adicionar <-------------------------------------------------------------------->
+		
+		public static void adicionar() {
+			
+			Prompt.imprimir("Adicionar Produto");
+			Prompt.linhaEmBranco();
+			
+			Prompt.imprimir("[1] Cadastrar Sorvete.");
+			Prompt.imprimir("[2] Cadastrar Bebida.");
+			Prompt.imprimir("[3] Sair.");
+			Integer selection = Prompt.lerInteiro();
+			
+			if(selection == 1) {
+				
+				String nome = Prompt.lerLinha("Informe o Nome: ");
+				String sabor = Prompt.lerLinha("Informe o Sabor: ");
+				double preco = Prompt.lerDecimal("Informe o Preço: ");
+					
+				CadastroProduto.adicionar(new Sorvete (nome, sabor, preco));
+				
+			}if(selection == 2) {				
+				
+				String nome = Prompt.lerLinha("Informe o Nome: ");
+				String sabor = Prompt.lerLinha("Informe o Sabor: ");
+				double preco = Prompt.lerDecimal("Informe o Preço: ");
+				Prompt.imprimir("Informe o TIPO(AGUA_COM_GAS, AGUA_SEM_GAS, REFRIGERANTE, SUCO)");
+				TipoBebida tipo = TipoBebida.valueOf(Prompt.lerLinha().toUpperCase());
+				String fabricante = Prompt.lerLinha("Informe o Fabricante: ");
+				String marca = Prompt.lerLinha("Informe a Marca: ");
+				String tamanho = Prompt.lerLinha("Informe o Tamanho: ");
+							
+				CadastroProduto.adicionar(new Bebida (nome, sabor, preco, tipo, fabricante, marca, tamanho));
+				
+	
+				
+			}if(selection == 3) {
+				TelaDeGerenciamentoDeProduto.mostrar();
+			}
+
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}
+			
+}
+		
+//Alterar <-------------------------------------------------------------------->
+		
+		
+public static void alterar() {
+			
+			Prompt.imprimir("Alterar Produtos");
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+			if (!nomeOriginal.isEmpty()) {
+				Sorvete sorveteAlterar = CadastroProduto.buscar(nomeOriginal);
+				Prompt.linhaEmBranco();
+				if (sorveteAlterar != null) {
+					
+					String nome = Prompt.lerLinha("Informe o Nome: ");
+					String sabor = Prompt.lerLinha("Informe o Sabor: "); 
+					double preco = Prompt.lerDecimal("Informe o Preço: ");
+					
+					
+					if (!nome.isEmpty()){
+						
+						sorveteAlterar.setNome(nome);
+						sorveteAlterar.setSabor(sabor);
+						sorveteAlterar.setPreco(preco);
+						
+						CadastroProduto.atualizar(nomeOriginal, sorveteAlterar);
+			
+					}
+				} 
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}
+	}
+}
+		
+//Excluir <-------------------------------------------------------------------->
+		
+		public static void excluir() {
+			
+			Prompt.imprimir("Excluir Funcionários");
+				
+				Prompt.linhaEmBranco();
+				String nome = Prompt.lerLinha("Informe o nome original");	
+				
+				if (!nome.isEmpty()) {
+					boolean produtoExcluido = CadastroProduto.excluir(nome);
+					
+					Prompt.linhaEmBranco();
+					if (produtoExcluido) {
+						Prompt.imprimir("Produto Excluido");
+					}
+				}
+			
+			Prompt.imprimir("[1] Sair.");
+			Integer option = Prompt.lerInteiro();
+			
+			if(option == 1) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}		
+	}
+}

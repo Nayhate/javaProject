@@ -1,0 +1,18 @@
+package principal.modelos;
+
+public class Venda {
+
+	public Object status;
+
+	public Venda(Integer codigo, Funcionario atendente) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void adicionar(Produto produto) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

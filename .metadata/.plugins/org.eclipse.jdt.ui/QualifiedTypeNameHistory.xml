@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="principal.telas.TelaDeGerenciamentoDeFuncionario"/>
+    <fullyQualifiedTypeName name="principal.controladores.CadastroFuncionario"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="principal.modelos.TipoBebida"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="principal.modelos.StatusVenda"/>
+    <fullyQualifiedTypeName name="principal.modelos.Funcionario"/>
+    <fullyQualifiedTypeName name="principal.controladores.ControleAcesso"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="principal.db.Banco"/>
+    <fullyQualifiedTypeName name="principal.controladores.ControleVenda"/>
+    <fullyQualifiedTypeName name="principal.modelos.Venda.Status"/>
+    <fullyQualifiedTypeName name="principal.modelos.Venda"/>
+    <fullyQualifiedTypeName name="principal.controladores.CadastroProduto"/>
+    <fullyQualifiedTypeName name="principal.modelos.Bebida"/>
+    <fullyQualifiedTypeName name="principal.modelos.Produto"/>
+    <fullyQualifiedTypeName name="principal.modelos.Sorvete"/>
+    <fullyQualifiedTypeName name="principal.modelos.Adicional"/>
+    <fullyQualifiedTypeName name="principal.dao.SorveteDAO"/>
+    <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+</qualifiedTypeNameHistroy>

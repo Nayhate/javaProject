@@ -1,0 +1,97 @@
+package principal.controladores;
+
+import principal.db.Banco;
+import principal.modelos.Produto;
+import principal.modelos.Sorvete;
+import principal.modelos.Bebida;
+
+
+public class CadastroProduto {
+
+public static void adicionar(Sorvete sorvete) {
+		Banco.sorvetes.add(sorvete);
+	}
+
+	public static void atualizar(int indexAlterar, Sorvete sorveteAlterado) {
+		Banco.sorvetes.set(indexAlterar, sorveteAlterado);
+	}
+	
+	public static void atualizar(String nomeOriginal, Sorvete sorveteAlterado) {
+		for (int i = 0; i < Banco.sorvetes.size(); i++) {
+			Sorvete sorvete = Banco.sorvetes.get(i);
+			if (sorvete.getNome().equalsIgnoreCase(nomeOriginal)) {
+				Banco.sorvetes.set(i, sorveteAlterado);
+				break;
+			}
+		}
+	}
+
+	public static Sorvete buscar(String nome) {
+		Sorvete sorveteRetorno = null;
+		for (Sorvete sorvete : Banco.sorvetes) {
+			if (sorvete.getNome().equalsIgnoreCase(nome)) {
+				sorveteRetorno = sorvete;
+				break;
+			}
+		}
+		return sorveteRetorno;
+	}
+
+	public static boolean excluir(String nome) {
+		boolean sorveteExcluido = false;
+		for (int i = 0; i < Banco.sorvetes.size(); i++) {
+			Sorvete sorvete = Banco.sorvetes.get(i);
+			if (sorvete.getNome().equalsIgnoreCase(nome)) {
+				Banco.sorvetes.remove(i);
+				sorveteExcluido = true;
+				break;
+			}
+		}
+		return sorveteExcluido;
+	}
+}
+
+public static void adicionar(Bebida bebida) {
+	Banco.bebidas.add(bebida);
+}
+
+public static void atualizar(int indexAlterar, Bebida bebidaAlterado) {
+	Banco.bebidas.set(indexAlterar, bebidaAlterado);
+}
+
+public static void atualizar(String nomeOriginal, Bebida bebidaAlterado) {
+	for (int i = 0; i < Banco.bebidas.size(); i++) {
+		Bebida bebida = Banco.bebidas.get(i);
+		if (bebida.getNome().equalsIgnoreCase(nomeOriginal)) {
+			Banco.bebidas.set(i, bebidaAlterado);
+			break;
+		}
+	}
+}
+
+public static Sorvete buscar(String nome) {
+	Sorvete sorveteRetorno = null;
+	for (Sorvete sorvete : Banco.sorvetes) {
+		if (sorvete.getNome().equalsIgnoreCase(nome)) {
+			sorveteRetorno = sorvete;
+			break;
+		}
+	}
+	return sorveteRetorno;
+}
+
+public static boolean excluir(String nome) {
+	boolean sorveteExcluido = false;
+	for (int i = 0; i < Banco.sorvetes.size(); i++) {
+		Sorvete sorvete = Banco.sorvetes.get(i);
+		if (sorvete.getNome().equalsIgnoreCase(nome)) {
+			Banco.sorvetes.remove(i);
+			sorveteExcluido = true;
+			break;
+		}
+	}
+	return sorveteExcluido;
+}
+}
+
+

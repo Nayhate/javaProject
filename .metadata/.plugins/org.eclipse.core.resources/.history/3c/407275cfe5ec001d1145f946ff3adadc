@@ -1,0 +1,423 @@
+package principal.telas;
+
+import principal.controladores.CadastroProduto;
+import principal.db.Banco;
+import principal.modelos.Adicional;
+import principal.modelos.Bebida;
+import principal.modelos.Sorvete;
+import principal.modelos.TipoBebida;
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeProduto {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeProduto.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
+				Prompt.imprimir("------------------------------------");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Retornando ao Menu de Gerenciamento.");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("------------------------------------");
+				Prompt.linhaEmBranco();
+				TelaDeGerenciamento.mostrar();
+				break;
+			}default:{
+				Prompt.imprimir("ERROR: Comando não reconhecido.");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Retornando ao menu principal.");
+				Prompt.linhaEmBranco();
+				TelaDeGerenciamentoDeProduto.mostrar();
+				break;
+			}
+	}
+}
+		
+//Listar <-------------------------------------------------------------------->
+	
+		
+public static void listar() {	
+			
+			Prompt.imprimir("Lista de Produtos");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("----------------------");	
+			
+			Prompt.imprimir("[1] Listar Sorvetes.");
+			Prompt.imprimir("[2] Listar Bebidas.");
+			Prompt.imprimir("[3] Listar Adicionais.");
+			Prompt.imprimir("[4] Sair.");
+			Integer selection = Prompt.lerInteiro();
+			
+			if(selection == 1) {						
+			
+				for (int i = 0; i < Banco.sorvetes.size(); i++) {
+					Sorvete sorvete = Banco.sorvetes.get(i);
+					Prompt.imprimir("Nome: " + sorvete.getNome());
+					Prompt.imprimir("Sabor: " + sorvete.getSabor());
+					Prompt.imprimir("Preço: R$" + sorvete.getPreco());
+										
+					Prompt.imprimir("----------------------");
+				}	
+				
+			}if(selection == 2) {
+				
+				for (int i = 0; i < Banco.bebidas.size(); i++) {
+					Bebida bebida = Banco.bebidas.get(i);
+					Prompt.imprimir("Nome: " + bebida.getNome());
+					Prompt.imprimir("Sabor: " + bebida.getSabor());
+					Prompt.imprimir("Preço: R$" + bebida.getPreco());
+					Prompt.imprimir("TIPO: " + bebida.getTipo());
+					Prompt.imprimir("Fabricante: " + bebida.getFabricante());
+					Prompt.imprimir("Marca: " + bebida.getMarca());
+					Prompt.imprimir("Tamanho: " + bebida.getTamanho()+"ml");
+					
+					Prompt.imprimir("----------------------");
+				}	
+				
+							
+			}if(selection == 3) {
+					
+				for (int i = 0; i < Banco.adicionais.size(); i++) {
+					Adicional adicional = Banco.adicionais.get(i);
+					Prompt.imprimir("Nome: " + adicional.getNome());
+					Prompt.imprimir("Sabor: " + adicional.getSabor());
+					Prompt.imprimir("Preço: R$" + adicional.getPreco());
+										
+					Prompt.imprimir("----------------------");
+				}	
+				
+			}if(selection == 4) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}else {
+				
+				Prompt.imprimir("ERROR: Comando não reconhecido.");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Retornando ao menu.");
+				Prompt.linhaEmBranco();
+			}
+			
+			
+				TelaDeGerenciamentoDeProduto.mostrar();
+
+}
+		
+//Adicionar <-------------------------------------------------------------------->
+		
+		public static void adicionar() {
+			
+			Prompt.imprimir("Adicionar Produto");
+			Prompt.linhaEmBranco();
+			
+			Prompt.imprimir("[1] Cadastrar Sorvete.");
+			Prompt.imprimir("[2] Cadastrar Bebida.");
+			Prompt.imprimir("[3] Cadastrar Adicional.");
+			Prompt.imprimir("[4] Sair.");
+			Integer selection = Prompt.lerInteiro();
+			
+			if(selection == 1) {
+				
+				String nome = Prompt.lerLinha("Informe o Nome: ");
+				Prompt.imprimir("---------------------");
+				String sabor = Prompt.lerLinha("Informe o Sabor: ");
+				Prompt.imprimir("---------------------");
+				double preco = Prompt.lerDecimal("Informe o Preço: ");
+				Prompt.imprimir("---------------------");
+					
+				CadastroProduto.adicionar(new Sorvete (nome, sabor, preco));
+				
+			}if(selection == 2) {				
+				
+				String nome = Prompt.lerLinha("Informe o Nome: ");
+				Prompt.imprimir("---------------------");
+				String sabor = Prompt.lerLinha("Informe o Sabor: ");
+				Prompt.imprimir("---------------------");
+				double preco = Prompt.lerDecimal("Informe o Preço: ");
+				Prompt.imprimir("---------------------");
+				Prompt.imprimir("Informe o TIPO(AGUA_COM_GAS, AGUA_SEM_GAS, REFRIGERANTE, SUCO)");
+				TipoBebida tipo = TipoBebida.valueOf(Prompt.lerLinha().toUpperCase());
+				Prompt.imprimir("---------------------");
+				String fabricante = Prompt.lerLinha("Informe o Fabricante: ");
+				Prompt.imprimir("---------------------");
+				String marca = Prompt.lerLinha("Informe a Marca: ");
+				Prompt.imprimir("---------------------");
+				String tamanho = Prompt.lerLinha("Informe o Tamanho: ");
+				Prompt.imprimir("---------------------");
+							
+				CadastroProduto.adicionar(new Bebida (nome, sabor, preco, tipo, fabricante, marca, tamanho));
+				
+	
+				
+			}if(selection == 3){
+				
+				String nome = Prompt.lerLinha("Informe o Nome: ");
+				Prompt.imprimir("---------------------");
+				String sabor = Prompt.lerLinha("Informe o Sabor: ");
+				Prompt.imprimir("---------------------");
+				double preco = Prompt.lerDecimal("Informe o Preço: ");
+				Prompt.imprimir("---------------------");
+					
+				CadastroProduto.adicionar(new Adicional (nome, sabor, preco));
+			
+			}if(selection == 4) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}else {
+				
+				Prompt.imprimir("ERROR: Comando não reconhecido.");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Retornando ao menu.");
+				Prompt.linhaEmBranco();
+			}
+			
+							
+				TelaDeGerenciamentoDeProduto.mostrar();
+
+}
+		
+//Alterar <-------------------------------------------------------------------->
+		
+		
+public static void alterar() {
+	
+		Prompt.linhaEmBranco();
+	
+		Prompt.imprimir("[1] Alterar Sorvete.");
+		Prompt.imprimir("[2] Alterar Bebida.");
+		Prompt.imprimir("[3] Sair.");
+		Integer selection = Prompt.lerInteiro();
+	
+		if(selection == 1) {
+			
+			Prompt.imprimir("Alterar Produtos");
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+			if (!nomeOriginal.isEmpty()) {
+				Sorvete sorveteAlterar = CadastroProduto.buscar(nomeOriginal);
+				Prompt.linhaEmBranco();
+				if (sorveteAlterar != null) {
+					
+					String nome = Prompt.lerLinha("Informe o Nome: ");
+					Prompt.imprimir("---------------------");
+					String sabor = Prompt.lerLinha("Informe o Sabor: ");
+					Prompt.imprimir("---------------------");
+					double preco = Prompt.lerDecimal("Informe o Preço: ");
+					Prompt.imprimir("---------------------");
+					
+					
+					if (!nome.isEmpty()){
+						
+						sorveteAlterar.setNome(nome);
+						sorveteAlterar.setSabor(sabor);
+						sorveteAlterar.setPreco(preco);
+						
+						CadastroProduto.atualizar(nomeOriginal, sorveteAlterar);
+			
+					}
+				}
+			}
+		}if(selection == 2) {
+
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+				if (!nomeOriginal.isEmpty()) {
+					Bebida bebidaAlterar = CadastroProduto.buscar2(nomeOriginal);
+					Prompt.linhaEmBranco();
+						if (bebidaAlterar != null) {
+					
+							String nome = Prompt.lerLinha("Informe o Nome: ");
+							Prompt.imprimir("---------------------");
+							String sabor = Prompt.lerLinha("Informe o Sabor: ");
+							Prompt.imprimir("---------------------");
+							double preco = Prompt.lerDecimal("Informe o Preço: ");
+							Prompt.imprimir("---------------------");
+							Prompt.imprimir("Informe o TIPO(AGUA_COM_GAS, AGUA_SEM_GAS, REFRIGERANTE, SUCO)");
+							TipoBebida tipo = TipoBebida.valueOf(Prompt.lerLinha().toUpperCase());
+							Prompt.imprimir("---------------------");
+							String fabricante = Prompt.lerLinha("Informe o Fabricante: ");
+							Prompt.imprimir("---------------------");
+							String marca = Prompt.lerLinha("Informe a Marca: ");
+							Prompt.imprimir("---------------------");
+							String tamanho = Prompt.lerLinha("Informe o Tamanho: ");
+							Prompt.imprimir("---------------------");
+					
+					
+							if (!nome.isEmpty()){
+						
+								bebidaAlterar.setNome(nome);
+								bebidaAlterar.setSabor(sabor);
+								bebidaAlterar.setPreco(preco);
+								bebidaAlterar.setTipo(tipo);
+								bebidaAlterar.setFabricante(fabricante);
+								bebidaAlterar.setMarca(marca);
+								bebidaAlterar.setTamanho(tamanho);
+								
+						
+								CadastroProduto.atualizar(nomeOriginal, bebidaAlterar);
+						}
+				}
+			}
+		}if(selection == 3) {
+			
+			Prompt.imprimir("Alterar Produtos");
+			
+			Prompt.linhaEmBranco();
+			String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+			
+			if (!nomeOriginal.isEmpty()) {
+				Adicional adicionalAlterar = CadastroProduto.buscar3(nomeOriginal);
+				Prompt.linhaEmBranco();
+				if (adicionalAlterar != null) {
+					
+					String nome = Prompt.lerLinha("Informe o Nome: ");
+					Prompt.imprimir("---------------------");
+					String sabor = Prompt.lerLinha("Informe o Sabor: ");
+					Prompt.imprimir("---------------------");
+					double preco = Prompt.lerDecimal("Informe o Preço: ");
+					Prompt.imprimir("---------------------");
+					
+					
+					if (!nome.isEmpty()){
+						
+						adicionalAlterar.setNome(nome);
+						adicionalAlterar.setSabor(sabor);
+						adicionalAlterar.setPreco(preco);
+						
+						CadastroProduto.atualizar(nomeOriginal, adicionalAlterar);
+			
+					}
+				}
+			}
+			
+		}if(selection == 4) {
+			
+			TelaDeGerenciamentoDeProduto.mostrar();
+			
+		}else {
+			
+			Prompt.imprimir("ERROR: Comando não reconhecido.");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("Retornando ao menu.");
+			Prompt.linhaEmBranco();
+		}
+					
+			TelaDeGerenciamentoDeProduto.mostrar();
+	}
+		
+
+//Excluir <-------------------------------------------------------------------->
+		
+		public static void excluir() {
+			
+			Prompt.imprimir("[1] Excluir Sorvete.");
+			Prompt.imprimir("[2] Excluir Bebida.");
+			Prompt.imprimir("[3] Excluir Adicional.");
+			Prompt.imprimir("[4] Sair.");
+			Integer selection = Prompt.lerInteiro();
+		
+			if(selection == 1) {
+			
+			Prompt.imprimir("Excluir - - - Sorvete");
+			Prompt.linhaEmBranco();
+			Prompt.imprimir("---------------------");
+			String nome = Prompt.lerLinha("Informe o nome original");	
+			Prompt.imprimir("---------------------");
+			Prompt.linhaEmBranco();
+			
+				if (!nome.isEmpty()) {
+					boolean sorveteExcluido = CadastroProduto.excluir(nome);
+					
+					if (sorveteExcluido) {
+						Prompt.imprimir("Sorvete - - - Excluido");
+						Prompt.imprimir("----------------------");
+						Prompt.linhaEmBranco();
+					}
+				}
+			}if(selection == 2) {
+				
+				Prompt.imprimir("Excluir - - - Bebida");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("---------------------");
+				String nome = Prompt.lerLinha("Informe o nome original");
+				Prompt.imprimir("---------------------");
+				Prompt.linhaEmBranco();
+				
+					if (!nome.isEmpty()) {
+						boolean bebidaExcluido = CadastroProduto.excluir2(nome);
+					
+						Prompt.linhaEmBranco();
+					if (bebidaExcluido) {
+						Prompt.imprimir("Bebida - - - Excluida");
+						Prompt.imprimir("----------------------");
+						Prompt.linhaEmBranco();
+					}
+				}
+			}if(selection == 3){
+				
+				Prompt.imprimir("Excluir - - - Adicional");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("---------------------");
+				String nome = Prompt.lerLinha("Informe o nome original");
+				Prompt.imprimir("---------------------");
+				Prompt.linhaEmBranco();
+				
+					if (!nome.isEmpty()) {
+						boolean adicionalExcluido = CadastroProduto.excluir3(nome);
+					
+						Prompt.linhaEmBranco();
+					if (adicionalExcluido) {
+						Prompt.imprimir("Adicional - - - Excluido");
+						Prompt.imprimir("----------------------");
+						Prompt.linhaEmBranco();
+					}
+				}
+				
+			}if(selection == 4) {
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}else {
+				
+				Prompt.imprimir("ERROR: Comando não reconhecido.");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Retornando ao menu.");
+				Prompt.linhaEmBranco();
+			}
+					
+				
+				TelaDeGerenciamentoDeProduto.mostrar();
+				
+			}		
+	}
+

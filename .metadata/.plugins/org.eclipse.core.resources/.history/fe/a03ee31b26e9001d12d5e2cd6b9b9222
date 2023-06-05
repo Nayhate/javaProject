@@ -1,0 +1,102 @@
+package principal.modelos;
+
+public class Funcionario{
+	private String dataAdmissao;
+	private String horarioEntrada;
+	private String horarioSaida;
+	private int salario;
+	private String nome;
+	private String CPF;
+	private String telefone;
+	private String email;	
+	private String login;
+	private String senha;
+//----------------------------------------------------------------------------//
+	//Construct
+	
+	public Funcionario(String dataAdmissao, String horarioEntrada, String horarioSaida, int salario, String nome,
+			String cpf, String telefone, String email, String login, String senha) {
+		this.dataAdmissao = dataAdmissao;
+		this.horarioEntrada = horarioEntrada;
+		this.horarioSaida = horarioSaida;
+		this.salario = salario;
+		this.nome = nome;
+		this.CPF = cpf;
+		this.telefone = telefone;
+		this.email = email;
+		this.login = login;
+		this.senha = senha;
+	}
+	
+public Funcionario() {
+		super();
+	}
+
+//----------------------------------------------------------------------------//
+	//Getters e Setters
+	public String getDataAdmissao() {
+		return dataAdmissao;
+	}
+	public void setDataAdmissao(String dataAdmissao) {
+		this.dataAdmissao = dataAdmissao;
+	}
+	public String getHorarioEntrada() {
+		return horarioEntrada;
+	}
+	public void setHorarioEntrada(String horarioEntrada) {
+		this.horarioEntrada = horarioEntrada;
+	}
+	public String getHorarioSaida() {
+		return horarioSaida;
+	}
+	public void setHorarioSaida(String horarioSaida) {
+		this.horarioSaida = horarioSaida;
+	}
+	public int getSalario() {
+		return salario;
+	}
+	public void setSalario(int salario) {
+		this.salario = salario;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getCPF() {
+		return CPF;
+	}
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+
+	
+	
+
+}

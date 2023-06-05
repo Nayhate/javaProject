@@ -1,0 +1,59 @@
+package principal.db;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import principal.modelos.Sorvete;
+import principal.modelos.TipoBebida;
+import principal.controladores.ControleVenda;
+import principal.modelos.Adicional;
+import principal.modelos.Bebida;
+import principal.modelos.Funcionario;
+import principal.modelos.Produto;
+import principal.modelos.Venda;
+
+
+
+public class Banco {
+	
+	public static List<Funcionario> funcionarios = new ArrayList<>();
+	public static List<Sorvete> sorvetes = new ArrayList<>();
+	public static List<Bebida> bebidas = new ArrayList<>();
+	public static List<Adicional> adicionais = new ArrayList<>();
+	public static List<Venda> vendas = new ArrayList<>();
+	public static ArrayList<Produto> produtos = new ArrayList<Produto>();
+
+	
+	public static void gerarDadosTemporarios() {
+
+		Funcionario funcionario = new Funcionario("11/11/2011", "8:00","16:00", 1500, "Claudio","111.111.111","9999-9999","claudiomendez@gmail.com","claumz11","20111111");
+		funcionarios.add(funcionario);
+		funcionarios.add(new Funcionario("22/12/2012", "7:00","15:00", 3000, "Renata","222.222.222","8888-8888","renatamendonça55@gmail.com","renama12","20121222"));
+			
+		Adicional coberturaChoco = new Adicional("Cobertura", "Chocolate", 1, 11);
+		adicionais.add(coberturaChoco);
+		Adicional coberturaMor = new Adicional("Cobertura", "Morango", 1, 12);
+		adicionais.add(coberturaMor);
+		
+
+		Sorvete milkshakeChoco = new Sorvete("MilkShake", "Chocolate", 15, 21);
+		sorvetes.add(milkshakeChoco);
+		Sorvete milkshakeMor = new Sorvete("MilkShake", "Morango", 15, 22);
+		sorvetes.add(milkshakeMor);
+		
+		Bebida fantaLa = new Bebida("Fanta", "Laranja", 5, 31, TipoBebida.REFRIGERANTE, "Coca-Cola", "Fanta", "600");
+		bebidas.add(fantaLa);
+		Bebida cocaCola = new Bebida("Coca Cola", "Cola", 5, 32, TipoBebida.REFRIGERANTE, "Coca-Cola", "Coca", "600");
+		bebidas.add(cocaCola);
+		
+		
+		produtos.add(milkshakeMor);
+		produtos.add(milkshakeChoco);
+		produtos.add(cocaCola);
+		produtos.add(fantaLa);
+	    produtos.add(coberturaChoco);
+	    produtos.add(coberturaMor);
+
+	}
+}

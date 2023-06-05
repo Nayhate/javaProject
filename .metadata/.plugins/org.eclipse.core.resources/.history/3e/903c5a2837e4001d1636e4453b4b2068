@@ -1,0 +1,42 @@
+package principal.telas;
+
+import principal.util.Prompt;
+
+public class TelaDeGerenciamento {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		System.out.println("1: Ir para a tela de gerenciamento de produto.");
+		System.out.println("2: Ir para a tela de gerenciamento de funcionário.");
+		System.out.println("3: Ir para a tela de gerenciamento de venda.");
+		System.out.println("4: Ir para a tela de realizar vendas.");
+		System.out.println("5: Sair do programa.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch (opcao) {
+			case 1: {
+				TelaDeGerenciamentoDeProduto.mostrar();
+				break;
+			}
+			case 2: {
+				TelaDeGerenciamentoDeFuncionario.mostrar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeVenda.mostrar();
+				break;
+			}
+			case 4:{
+				TelaDeRealizarVenda.mostrar();
+				break;
+			}
+			case 5: {
+				TelaLogin.mostrar();
+				break;
+			}
+
+	}
+}
+	}

@@ -1,0 +1,45 @@
+package principal.telas;
+
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeVenda {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Listar  venda(s).");
+		Prompt.imprimir("[2] Alterar venda(s).");
+		Prompt.imprimir("[3] Excluir venda(s).");
+		Prompt.imprimir("[4] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeVenda.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeVenda.alterar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeVenda.excluir();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}}
+		}
+		
+	public static void listar() {		
+	}
+
+	public static void alterar() {
+		
+	}
+	public static void excluir() {
+		
+	}
+}

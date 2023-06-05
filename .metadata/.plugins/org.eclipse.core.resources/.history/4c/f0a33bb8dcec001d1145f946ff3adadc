@@ -1,0 +1,31 @@
+package principal.modelos;
+
+public class Adicional extends Sorvete{
+	
+	//---------------------------------------------------------//
+
+	// CONSTRUCT
+	
+	public Adicional(String nome, String sabor, double preco, String descricao) {
+		super(nome, sabor, preco);
+		// TODO Auto-generated constructor stub
+	}	
+	
+	private String Descricao;	
+	
+	//---------------------------------------------------------//
+	
+	//GETTERS
+		
+	public String getDescricao() {
+		return Descricao;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS 
+	
+	public void setDescricao(String descricao) {
+		Descricao = descricao;
+	}
+}

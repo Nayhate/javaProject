@@ -1,0 +1,15 @@
+package principal.dao;
+
+import java.util.List;
+
+public interface DAO <T>{
+	
+	T buscarPorId(Integer id);	
+	List<T> listar();
+	Integer salvar(T entidade);
+	Integer atualizar(T entidade);
+	T buscarPorQuery(String query);
+	void apagar(Integer id);	
+	void close();
+
+}

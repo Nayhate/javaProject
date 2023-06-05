@@ -1,0 +1,78 @@
+package principal.telas;
+
+import principal.util.Prompt;
+
+public class TelaDeRealizarVenda {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("[1] Realizar nova Venda.");
+		Prompt.imprimir("[2] Voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1:{
+				TelaDeRealizarVenda.selecionarProdutos();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}
+		}
+	}
+
+		private static void selecionarProdutos() {
+
+			Prompt.linhaEmBranco();
+			Prompt.imprimir(Mensagem.MSG_LISTA_DE_PRODUTOS);
+			
+			if (Banco.produtos.isEmpty()) {
+				Prompt.imprimir(Mensagem.MSG_NENHUM_PRODUTO); 
+			} else {
+				for (Produto produto : Banco.produtos) {
+					Prompt.imprimir(produto);
+				}
+			}
+			
+			Prompt.linhaEmBranco();
+			String nome = Prompt.lerLinha(Mensagem.MSG_INFORME_NOME);	
+			
+			if (!nome.isEmpty()) {
+				Produto produto = CadastroDeProdutos.buscar(nome);
+				
+				if (produto != null) {
+					ControleDePedidos.adicionar(produto);
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_PRODUTO_SELECIONADO);
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_SELECIONAR_MAIS);
+					Prompt.imprimir(Mensagem.MSG_SIM);
+					Prompt.imprimir(Mensagem.MSG_NAO);
+					int opcao = Prompt.lerInteiro();
+					if (opcao == 1) {
+						TelaDeVendas.selecionarProdutos();
+					}
+				} else {
+					Prompt.linhaEmBranco();
+					Prompt.imprimir(Mensagem.MSG_PRODUTO_NAO_ENCONTRADO);
+					Prompt.linhaEmBranco();
+					Prompt.pressionarEnter();
+				}
+			}
+			TelaDeVendas.mostrar();
+		}
+
+		private static void finalizarVenda() {
+			Pedido pedido = ControleDePedidos.pedido;
+			pedido.status = Status.CONCLUIDO;
+			ControleDePedidos.adicionar(pedido);
+			ControleDePedidos.pedido = null;
+			TelaDePedidos.listar();
+		}
+	}
+
+	}
+}

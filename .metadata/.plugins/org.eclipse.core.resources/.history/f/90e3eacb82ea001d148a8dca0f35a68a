@@ -1,0 +1,52 @@
+package principal.controladores;
+
+import principal.db.Banco;
+import principal.modelos.Produto;
+
+
+public class CadastroProduto {
+
+public static void adicionar(Produto produto) {
+		Banco.funcionarios.add(produto);
+	}
+
+	public static void atualizar(int indexAlterar, Produto produtoAlterado) {
+		Banco.funcionarios.set(indexAlterar, produtoAlterado);
+	}
+	
+	public static void atualizar(String nomeOriginal, Produto produtoAlterado) {
+		for (int i = 0; i < Banco.funcionarios.size(); i++) {
+			Produto produto = Banco.funcionarios.get(i);
+			if (produto.getNome().equalsIgnoreCase(nomeOriginal)) {
+				Banco.funcionarios.set(i, produtoAlterado);
+				break;
+			}
+		}
+	}
+
+	public static Produto buscar(String nome) {
+		Produto produtoRetorno = null;
+		for (Produto produto : Banco.funcionarios) {
+			if (produto.getNome().equalsIgnoreCase(nome)) {
+				produtoRetorno = produto;
+				break;
+			}
+		}
+		return produtoRetorno;
+	}
+
+	public static boolean excluir(String nome) {
+		boolean produtoExcluido = false;
+		for (int i = 0; i < Banco.funcionarios.size(); i++) {
+			Produto produto = Banco.funcionarios.get(i);
+			if (produto.getNome().equalsIgnoreCase(nome)) {
+				Banco.funcionarios.remove(i);
+				produtoExcluido = true;
+				break;
+			}
+		}
+		return produtoExcluido;
+	}
+}
+
+

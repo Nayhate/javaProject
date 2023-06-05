@@ -1,0 +1,54 @@
+package principal.telas;
+
+import principal.util.Prompt;
+
+public class TelaDeGerenciamentoDeFuncionario {
+	public static void mostrar() {
+		Prompt.linhaEmBranco();
+		
+		Prompt.imprimir("Opção 1 lista de funcinários.");
+		Prompt.imprimir("Opção 2 adicionar funcionário.");
+		Prompt.imprimir("Opção 3 alterar funcionário.");
+		Prompt.imprimir("Opção 4 excluir funcionário.");
+		Prompt.imprimir("Opção 5 voltar para a tela de gerenciamento.");
+		
+		
+		Integer opcao = Prompt.lerInteiro();
+		
+		switch(opcao){
+			case 1: {
+				TelaDeGerenciamentoDeFuncionario.listar();
+				break;
+			}
+			case 2:{
+				TelaDeGerenciamentoDeFuncionario.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeFuncionario.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeFuncionario.excluir();
+				break;
+			}
+			case 5:{
+				TelaDeGerenciamento.mostrar();
+				break;
+			}}
+		}
+		
+	public static void listar() {		
+	}
+	
+	public static void adicionar() {
+		
+	}
+	
+	public static void alterar() {
+		
+	}
+	public static void excluir() {
+		
+	}
+}

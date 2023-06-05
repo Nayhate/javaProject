@@ -1,0 +1,46 @@
+package principal.db;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import principal.modelos.Produto;
+import principal.modelos.Funcionario;
+import principal.modelos.Venda;
+import principal.telas.TelaDeGerenciamentoDeFuncionario;
+
+
+public class Banco {
+	
+	public static List<Funcionario> funcionarios = new ArrayList<>();
+	public static List<Produto> produtos = new ArrayList<>();
+	public static List<Venda> vendas = new ArrayList<>();
+
+
+	
+	public static void gerarDadosTemporarios() {
+
+		Funcionario atendente = new Funcionario("11/11/2011", "8:00","", 1500, "Claudio","111.111.111","9999-9999","claudiomendez@gmail.com","claumz11","20111111");
+		funcionarios.add(atendente);
+		
+		Funcionario atendente = new Funcionario("11/11/2011", "8:00","", 1500, "Claudio","111.111.111","9999-9999","claudiomendez@gmail.com","claumz11","20111111");
+		funcionarios.add(atendente);
+		
+		
+		
+		
+
+		Produto produto = new Produto("TV", 3000.0);
+		produtos.add(produto);
+		produtos.add(new Produto("Computador", 5000.0));
+
+		Integer codigo = ControleDePedidos.getNovoCodigo();
+		Pedido pedido = new Pedido(codigo, usuario);
+		pedido.cliente = cliente;
+		pedido.adicionar(produto);
+		pedido.status = Status.CONCLUIDO;
+		pedidos.add(pedido);
+	}
+
+
+
+}

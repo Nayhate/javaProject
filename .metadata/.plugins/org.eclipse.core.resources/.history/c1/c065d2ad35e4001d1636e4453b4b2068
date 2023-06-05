@@ -1,0 +1,38 @@
+package Principal.modulo;
+
+public class Produto {
+	
+	private String Nome;
+	private double Preco;
+	
+	//---------------------------------------------------------//
+	
+	//CONSTRUCT
+	
+	public Produto(String nome2, String sabor2, double preco2) {
+		
+	}
+	
+	//---------------------------------------------------------//
+	
+	// GETTERS 
+	
+	public String getNome() {
+		return Nome;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	
+	//---------------------------------------------------------//
+	
+	//SETTERS
+	
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+	
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+}
