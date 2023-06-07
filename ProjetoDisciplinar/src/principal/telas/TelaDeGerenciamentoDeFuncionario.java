@@ -1,7 +1,8 @@
 package principal.telas;
 
+import java.util.List;
+
 import principal.controladores.CadastroFuncionario;
-import principal.dao.Banco;
 import principal.modelos.Funcionario;
 import principal.util.Prompt;
 
@@ -61,33 +62,24 @@ public class TelaDeGerenciamentoDeFuncionario {
 		
 	public static void listar() {	
 		
-		Prompt.imprimir("Lista de Funcionários");
+		Prompt.imprimir("Lista de Produtos");
 		Prompt.linhaEmBranco();
-		Prompt.imprimir("----------------------");		
+		Prompt.imprimir("----------------------");
 		
-		for (int i = 0; i < Banco.funcionarios.size(); i++) {
-		    Funcionario funcionario = Banco.funcionarios.get(i);
-		    Prompt.imprimir("CPF: " + funcionario.getCPF());
-		    Prompt.imprimir("Nome: " + funcionario.getNome());
-		    Prompt.imprimir("E-mail: " + funcionario.getEmail());
-		    Prompt.imprimir("Telefone: " + funcionario.getTelefone());
-		    Prompt.imprimir("Admissão: " + funcionario.getDataAdmissao());	
-		    Prompt.imprimir("Salário: R$" + funcionario.getSalario());
-		    Prompt.imprimir("Entrada: " + funcionario.getHorarioEntrada() + "h");
-		    Prompt.imprimir("Saida: " + funcionario.getHorarioSaida() + "h");
-		    
-		    Prompt.imprimir("----------------------");
-		}	
-		
-		Prompt.imprimir("[1] Sair.");
-		Integer option = Prompt.lerInteiro();		
-			
-		
-		if(option == 1) {
-			
-			TelaDeGerenciamentoDeFuncionario.mostrar();
-			
+		CadastroFuncionario cadastro = CadastroFuncionario.getInstance();
+
+		List<Funcionario> funcionarios = cadastro.getFuncionarios();
+		if (funcionarios.isEmpty()) {
+			Prompt.imprimir("Lista Vazia"); 
+		} else {
+			for (Funcionario funcionario : funcionarios) {
+				Prompt.imprimir(funcionario.toString());
+			}
 		}
+		
+		Prompt.linhaEmBranco();
+		Prompt.pressionarEnter();
+		TelaDeGerenciamentoDeFuncionario.mostrar();
 }
 	
 //Adicionar <-------------------------------------------------------------------->
@@ -108,17 +100,16 @@ public class TelaDeGerenciamentoDeFuncionario {
 		String login = Prompt.lerLinha("Informe o Login: ");
 		String senha = Prompt.lerLinha("Informe o Senha: ");
 		
-		CadastroFuncionario.adicionar(new Funcionario (adimissao, entrada, saida, salario, nome, cpf, telefone, email, login, senha));
-
+		CadastroFuncionario cadastro = CadastroFuncionario.getInstance();
 		
-		Prompt.imprimir("[1] Sair.");
-		Integer option = Prompt.lerInteiro();
-		
-		if(option == 1) {
+		if (!nome.isEmpty()) {
+			cadastro.adicionar(new Funcionario(adimissao, entrada, saida, salario, nome, cpf, telefone, email, login, senha));
 			
-			TelaDeGerenciamentoDeFuncionario.mostrar();
-			
+			Prompt.linhaEmBranco();
+			Prompt.pressionarEnter();
 		}
+		
+		TelaDeGerenciamentoDeFuncionario.mostrar();
 		
 	}
 	
@@ -130,10 +121,12 @@ public class TelaDeGerenciamentoDeFuncionario {
 		Prompt.imprimir("Alterar Funcionários");
 		
 		Prompt.linhaEmBranco();
-		String nomeOriginal = Prompt.lerLinha("Informe o Nome Original");	
+		Long id = (long) Prompt.lerInteiro("Informe o ID: ");	
 		
-		if (!nomeOriginal.isEmpty()) {
-			Funcionario funcionarioAlterar = CadastroFuncionario.buscar(nomeOriginal);
+		CadastroFuncionario cadastro = CadastroFuncionario.getInstance();
+		
+		if (id > 0) {
+			Funcionario funcionarioAlterar = cadastro.buscar(id);
 			Prompt.linhaEmBranco();
 			if (funcionarioAlterar != null) {
 				String adimissao = Prompt.lerLinha("Informe a Data de Admissão: ");
@@ -158,10 +151,7 @@ public class TelaDeGerenciamentoDeFuncionario {
 					funcionarioAlterar.setTelefone(telefone);
 					funcionarioAlterar.setEmail(email);
 					funcionarioAlterar.setLogin(login);
-					funcionarioAlterar.setSenha(senha);
-					
-					CadastroFuncionario.atualizar(nomeOriginal, funcionarioAlterar);
-		
+					funcionarioAlterar.setSenha(senha);		
 				}
 			} 
 		
@@ -183,16 +173,18 @@ public class TelaDeGerenciamentoDeFuncionario {
 		Prompt.imprimir("Excluir Funcionários");
 			
 			Prompt.linhaEmBranco();
-			String nome = Prompt.lerLinha("Informe o nome original");	
+			Long id =(long) Prompt.lerInteiro("Informe o ID: ");
 			
-			if (!nome.isEmpty()) {
-				boolean funcionarioExcluido = CadastroFuncionario.excluir(nome);
+			CadastroFuncionario cadastro = CadastroFuncionario.getInstance();
+			
+			if (id > 0) {
+				
+				cadastro.excluir(id);
 				
 				Prompt.linhaEmBranco();
-				if (funcionarioExcluido) {
-					Prompt.imprimir("Usuario Excluido");
+				Prompt.imprimir("Usuario Excluido");
+				Prompt.linhaEmBranco();
 				}
-			}
 		
 		Prompt.imprimir("[1] Sair.");
 		Integer option = Prompt.lerInteiro();

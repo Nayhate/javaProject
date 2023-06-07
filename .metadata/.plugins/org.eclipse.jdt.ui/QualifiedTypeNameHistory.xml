@@ -14,17 +14,25 @@
     <fullyQualifiedTypeName name="principal.controladores.ControleVenda"/>
     <fullyQualifiedTypeName name="principal.modelos.Venda.Status"/>
     <fullyQualifiedTypeName name="principal.modelos.Venda"/>
-    <fullyQualifiedTypeName name="principal.controladores.CadastroProduto"/>
     <fullyQualifiedTypeName name="principal.modelos.Bebida"/>
-    <fullyQualifiedTypeName name="principal.modelos.Produto"/>
     <fullyQualifiedTypeName name="principal.modelos.Sorvete"/>
     <fullyQualifiedTypeName name="principal.modelos.Adicional"/>
     <fullyQualifiedTypeName name="principal.dao.SorveteDAO"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Query"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityTransaction"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="principal.modelos.Produto"/>
+    <fullyQualifiedTypeName name="principal.dao.ProdutoDAO"/>
+    <fullyQualifiedTypeName name="principal.controladores.CadastroProduto"/>
+    <fullyQualifiedTypeName name="principal.modelos.TipoAdicional"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
 </qualifiedTypeNameHistroy>

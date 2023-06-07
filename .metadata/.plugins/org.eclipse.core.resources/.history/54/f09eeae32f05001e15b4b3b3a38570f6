@@ -1,0 +1,9 @@
+package principal.dao;
+
+import java.util.List;
+
+import principal.modelos.Venda;
+
+public class VendaDAO extends GenericDAO<Venda>{
+
+}

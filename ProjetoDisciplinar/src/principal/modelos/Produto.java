@@ -11,10 +11,11 @@ public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	private String Nome;
 	private String Sabor;
 	private double Preco;
+	private TipoAdicional Adicional;
 	
 	//---------------------------------------------------------//
 	
@@ -24,10 +25,11 @@ public class Produto {
 	
 	//CONSTRUCT
 	
-	public Produto(String nome, String sabor, double preco) {
+	public Produto(String nome, String sabor, double preco, TipoAdicional adicional) {
 		this.Nome = nome;
 		this.Sabor = sabor;
 		this.Preco = preco;
+		this.Adicional = adicional;
 		
 	}
 	
@@ -35,7 +37,7 @@ public class Produto {
 	
 	// GETTERS 
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}	
 	public String getNome() {
@@ -47,12 +49,15 @@ public class Produto {
 	public double getPreco() {
 		return Preco;
 	}
+	public TipoAdicional getAdicional() {
+		return Adicional;
+	}
 	
 	//---------------------------------------------------------//
 	
 	//SETTERS
 	
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
@@ -66,5 +71,12 @@ public class Produto {
 	
 	public void setPreco(double preco) {
 		Preco = preco;
+	}
+	public void setAdicional(TipoAdicional adicional) {
+		Adicional = adicional;
+	}	
+	@Override
+	public String toString() {
+		return "Produto {id = " + getId() + ", nome = " + Nome + ", Sabor = " + getSabor() + ", preco = " + Preco + ", Adicional = " + Adicional + "}";
 	}
 }

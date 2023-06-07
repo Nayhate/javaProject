@@ -34,11 +34,11 @@ public class CadastroFuncionario {
 		dao.atualizar(funcionario);
 	}
 
-	public Funcionario buscar(Integer id) {
+	public Funcionario buscar(Long id) {
 		return dao.buscarPorId(id);
 	}
 
-	public void excluir(Integer id) {
+	public void excluir(Long id) {
 		dao.apagar(id);
 	}
 }

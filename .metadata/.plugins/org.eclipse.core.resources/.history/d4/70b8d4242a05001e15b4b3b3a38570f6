@@ -1,0 +1,11 @@
+package principal.dao;
+
+import java.util.List;
+
+import principal.modelos.Funcionario;
+
+public class FuncionarioDAO extends GenericDAO<Funcionario> {
+	
+
+}	
+

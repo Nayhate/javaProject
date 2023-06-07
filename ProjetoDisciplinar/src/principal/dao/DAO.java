@@ -1,14 +1,15 @@
 package principal.dao;
 
 import java.util.List;
+import java.util.Map;
 
-public interface DAO <T>{
+public interface DAO<T> {
 	
-	T buscarPorId(Integer id);	
+	T salvar(T entidade);
+	T atualizar(T entidade);
+	T buscarPorId(Long id);
+	T buscarPorQuery(String query);
+	T buscarPorQuery(String query, Map<String, Object> params);
 	List<T> listar();
-	Integer salvar(T entidade);
-	Integer atualizar(T entidade);
-	void apagar(Integer id);	
-	void close();
-
+	void apagar(Long id);
 }

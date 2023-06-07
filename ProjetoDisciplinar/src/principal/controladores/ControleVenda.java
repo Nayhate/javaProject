@@ -26,7 +26,7 @@ public class ControleVenda {
 		return dao.listar();
 	}
 	
-	public Venda buscar(Integer id) {
+	public Venda buscar(Long id) {
 		return dao.buscarPorId(id);
 	}
 	

@@ -1,0 +1,7 @@
+package principal.dao;
+
+import principal.modelos.Sorvete;
+
+public class SorveteDAO extends GenericDAO<Sorvete> {
+	
+}

@@ -2,8 +2,9 @@ package principal.telas;
 
 import java.util.List;
 
-import principal.controladores.CadastroSorvete;
-import principal.modelos.Sorvete;
+import principal.controladores.CadastroProduto;
+import principal.modelos.Produto;
+import principal.modelos.TipoAdicional;
 import principal.util.Prompt;
 
 public class TelaDeGerenciamentoDeProduto {
@@ -65,18 +66,20 @@ public static void listar() {
 			Prompt.linhaEmBranco();
 			Prompt.imprimir("----------------------");
 			
-			CadastroSorvete cadastro = CadastroSorvete.getInstance();
+			CadastroProduto cadastro = CadastroProduto.getInstance();
 
-			List<Sorvete> sorvetes = cadastro.getSorvetes();
-			if (sorvetes.isEmpty()) {
+			List<Produto> produtos = cadastro.getProdutos();
+			if (produtos.isEmpty()) {
 				Prompt.imprimir("Lista Vazia"); 
 			} else {
-				for (Sorvete sorvete : sorvetes) {
-					Prompt.imprimir(sorvete.toString());
+				for (Produto produto : produtos) {
+					Prompt.imprimir(produto.toString());
 				}
 			}			
-			
-}
+			Prompt.linhaEmBranco();
+			Prompt.pressionarEnter();
+			TelaDeGerenciamentoDeProduto.mostrar();
+		}
 		
 //Adicionar <-------------------------------------------------------------------->
 		
@@ -99,11 +102,25 @@ public static void listar() {
 				Prompt.imprimir("---------------------");
 				double preco = Prompt.lerDecimal("Informe o Preço: ");
 				Prompt.imprimir("---------------------");
+				Prompt.imprimir("Informe o Adicional("
+							+ "COBERTURA_CHOCOLATE,\r\n"
+							+ "	COBERTURA_MORANGO,\r\n"
+							+ "	COBERTURA_CARAMELO,\r\n"
+							+ "	TUBETES_SEM_RECHEIO,\r\n"
+							+ "	TUBETES_RECHEADOS,\r\n"
+							+ "	FRUTA_MORANGO,\r\n"
+							+ "	FRUTA_BANANA,\r\n"
+							+ "	FRUTA_CEREJA,\r\n"
+							+ "	GANULADO_CHOCOLATE,\r\n"
+							+ "	GRANULADO_AMENDOIN;)");
+				Prompt.imprimir("---------------------");				
+				TipoAdicional adicional = TipoAdicional.valueOf(Prompt.lerLinha().toUpperCase());
 				
-				CadastroSorvete cadastro = CadastroSorvete.getInstance();
+				
+				CadastroProduto cadastro = CadastroProduto.getInstance();
 					
 				if (!nome.isEmpty()) {
-					cadastro.adicionar(new Sorvete(nome, sabor, preco));
+					cadastro.adicionar(new Produto(nome, sabor, preco, adicional));
 					
 					Prompt.linhaEmBranco();
 					Prompt.pressionarEnter();
@@ -152,25 +169,38 @@ public static void alterar() {
 			Prompt.imprimir("Alterar Produtos");
 			
 			Prompt.linhaEmBranco();
-			Integer id = Prompt.lerInteiro("Informe o ID");	
+			Long id = (long) Prompt.lerInteiro("Informe o ID: ");
 			
-			CadastroSorvete cadastro = CadastroSorvete.getInstance();
+			CadastroProduto cadastro = CadastroProduto.getInstance();
 			
 			if (id > 0) {
-				Sorvete sorveteAlterar = cadastro.buscar(id);
+				Produto produtoAlterar = cadastro.buscar(id);
 			
-				if (sorveteAlterar != null) {
+				if (produtoAlterar != null) {
 					String nome = Prompt.lerLinha("Informe o Nome: ");
 					String sabor = Prompt.lerLinha("Informe o Sabor: ");
 					Double preco = Prompt.lerDecimal("Informe o Preço: ");
-					
+					Prompt.imprimir("Informe o Adicional("
+								+ "COBERTURA_CHOCOLATE,\r\n"
+								+ "	COBERTURA_MORANGO,\r\n"
+								+ "	COBERTURA_CARAMELO,\r\n"
+								+ "	TUBETES_SEM_RECHEIO,\r\n"
+								+ "	TUBETES_RECHEADOS,\r\n"
+								+ "	FRUTA_MORANGO,\r\n"
+								+ "	FRUTA_BANANA,\r\n"
+								+ "	FRUTA_CEREJA,\r\n"
+								+ "	GANULADO_CHOCOLATE,\r\n"
+								+ "	GRANULADO_AMENDOIN;)");
+					TipoAdicional adicional = TipoAdicional.valueOf(Prompt.lerLinha().toUpperCase());
+												
 					if (!nome.isEmpty()) {		
-						sorveteAlterar.setId(id); 
-						sorveteAlterar.setNome(nome);
-						sorveteAlterar.setSabor(sabor);
-						sorveteAlterar.setPreco(preco);
+						produtoAlterar.setId(id); 
+						produtoAlterar.setNome(nome);
+						produtoAlterar.setSabor(sabor);
+						produtoAlterar.setPreco(preco);
+						produtoAlterar.setAdicional(adicional);
 						
-						cadastro.atualizar(sorveteAlterar);
+						cadastro.atualizar(produtoAlterar);
 	
 						Prompt.linhaEmBranco();
 						Prompt.imprimir("Produto Alterado");
@@ -227,11 +257,11 @@ public static void alterar() {
 			Prompt.imprimir("Excluir - - - Sorvete");
 			Prompt.linhaEmBranco();
 			Prompt.imprimir("---------------------");
-			Integer id = Prompt.lerInteiro("Informe o ID:");	
+			Long id = (long) Prompt.lerInteiro("Informe o ID:");	
 			Prompt.imprimir("---------------------");
 			Prompt.linhaEmBranco();
 			
-			CadastroSorvete cadastro = CadastroSorvete.getInstance();
+			CadastroProduto cadastro = CadastroProduto.getInstance();
 				
 			if (id > 0) {
 					cadastro.excluir(id);

@@ -12,8 +12,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import principal.controladores.ControleAcesso;
-import principal.controladores.ControleVenda;
-import principal.util.Prompt;
 
 @Entity
 public class Venda {
@@ -41,7 +39,7 @@ public class Venda {
 	
 	public Venda() {
 		this.setStatus(Status.ABERTO);
-		this.funcionario = ControleAcesso.usuarioLogado;
+		this.funcionario = ControleAcesso.funcionarioLogado;
 		this.produtos = new ArrayList<>();
 		this.data = LocalDateTime.now();
 		this.total = 0;
