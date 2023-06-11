@@ -1,0 +1,17 @@
+package principal.telas;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.CadastroProduto;
+import principal.controladores.ControleVenda;
+import principal.modelos.Produto;
+import principal.modelos.Pedido;
+import principal.modelos.Pedido.Status;
+import principal.util.Prompt;
+
+public class TelaDeRealizarVenda {
+		
+}
+
+

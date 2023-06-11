@@ -12,14 +12,12 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="principal.db.Banco"/>
     <fullyQualifiedTypeName name="principal.controladores.ControleVenda"/>
-    <fullyQualifiedTypeName name="principal.modelos.Venda.Status"/>
     <fullyQualifiedTypeName name="principal.modelos.Venda"/>
     <fullyQualifiedTypeName name="principal.modelos.Bebida"/>
     <fullyQualifiedTypeName name="principal.modelos.Sorvete"/>
     <fullyQualifiedTypeName name="principal.modelos.Adicional"/>
     <fullyQualifiedTypeName name="principal.dao.SorveteDAO"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
@@ -35,4 +33,12 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="principal.modelos.Venda.Status"/>
+    <fullyQualifiedTypeName name="principal.telas.TelaDeGerenciamento"/>
+    <fullyQualifiedTypeName name="principal.controladores.ControlePedido"/>
+    <fullyQualifiedTypeName name="principal.util.Prompt"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="principal.modelos.Pedido"/>
 </qualifiedTypeNameHistroy>

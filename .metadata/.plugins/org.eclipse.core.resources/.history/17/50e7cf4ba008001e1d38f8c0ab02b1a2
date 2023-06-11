@@ -1,0 +1,7 @@
+package principal.dao;
+
+import principal.modelos.Venda;
+
+public class PedidoDAO extends GenericDAO<Venda>{
+
+}

@@ -4,7 +4,6 @@ import java.util.List;
 
 import principal.controladores.CadastroProduto;
 import principal.modelos.Produto;
-import principal.modelos.TipoAdicional;
 import principal.util.Prompt;
 
 public class TelaDeGerenciamentoDeProduto {
@@ -102,25 +101,11 @@ public static void listar() {
 				Prompt.imprimir("---------------------");
 				double preco = Prompt.lerDecimal("Informe o Preço: ");
 				Prompt.imprimir("---------------------");
-				Prompt.imprimir("Informe o Adicional("
-							+ "COBERTURA_CHOCOLATE,\r\n"
-							+ "	COBERTURA_MORANGO,\r\n"
-							+ "	COBERTURA_CARAMELO,\r\n"
-							+ "	TUBETES_SEM_RECHEIO,\r\n"
-							+ "	TUBETES_RECHEADOS,\r\n"
-							+ "	FRUTA_MORANGO,\r\n"
-							+ "	FRUTA_BANANA,\r\n"
-							+ "	FRUTA_CEREJA,\r\n"
-							+ "	GANULADO_CHOCOLATE,\r\n"
-							+ "	GRANULADO_AMENDOIN;)");
-				Prompt.imprimir("---------------------");				
-				TipoAdicional adicional = TipoAdicional.valueOf(Prompt.lerLinha().toUpperCase());
-				
 				
 				CadastroProduto cadastro = CadastroProduto.getInstance();
 					
 				if (!nome.isEmpty()) {
-					cadastro.adicionar(new Produto(nome, sabor, preco, adicional));
+					cadastro.adicionar(new Produto(nome, sabor, preco));
 					
 					Prompt.linhaEmBranco();
 					Prompt.pressionarEnter();
@@ -180,26 +165,13 @@ public static void alterar() {
 					String nome = Prompt.lerLinha("Informe o Nome: ");
 					String sabor = Prompt.lerLinha("Informe o Sabor: ");
 					Double preco = Prompt.lerDecimal("Informe o Preço: ");
-					Prompt.imprimir("Informe o Adicional("
-								+ "COBERTURA_CHOCOLATE,\r\n"
-								+ "	COBERTURA_MORANGO,\r\n"
-								+ "	COBERTURA_CARAMELO,\r\n"
-								+ "	TUBETES_SEM_RECHEIO,\r\n"
-								+ "	TUBETES_RECHEADOS,\r\n"
-								+ "	FRUTA_MORANGO,\r\n"
-								+ "	FRUTA_BANANA,\r\n"
-								+ "	FRUTA_CEREJA,\r\n"
-								+ "	GANULADO_CHOCOLATE,\r\n"
-								+ "	GRANULADO_AMENDOIN;)");
-					TipoAdicional adicional = TipoAdicional.valueOf(Prompt.lerLinha().toUpperCase());
-												
+
 					if (!nome.isEmpty()) {		
 						produtoAlterar.setId(id); 
 						produtoAlterar.setNome(nome);
 						produtoAlterar.setSabor(sabor);
 						produtoAlterar.setPreco(preco);
-						produtoAlterar.setAdicional(adicional);
-						
+												
 						cadastro.atualizar(produtoAlterar);
 	
 						Prompt.linhaEmBranco();

@@ -25,12 +25,10 @@ public class Produto {
 	
 	//CONSTRUCT
 	
-	public Produto(String nome, String sabor, double preco, TipoAdicional adicional) {
+	public Produto(String nome, String sabor, double preco) {
 		this.Nome = nome;
 		this.Sabor = sabor;
-		this.Preco = preco;
-		this.Adicional = adicional;
-		
+		this.Preco = preco;		
 	}
 	
 	//---------------------------------------------------------//
@@ -77,6 +75,9 @@ public class Produto {
 	}	
 	@Override
 	public String toString() {
-		return "Produto {id = " + getId() + ", nome = " + Nome + ", Sabor = " + getSabor() + ", preco = " + Preco + ", Adicional = " + Adicional + "}";
+		return "Produto {id = " + getId() + ","
+		+ " Sorvete = " + Nome + ","
+		+ " Sabor = " + getSabor() + ","
+		+ " Preço = R$" + Preco +"}";
 	}
 }

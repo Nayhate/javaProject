@@ -1,0 +1,21 @@
+package principal.telas;
+
+public class TelaDeGerenciamentoDePedido {
+	
+	public static void mostrar() {
+		
+		public static TelaDeGerenciamentoDePedido getInstance() {
+			if (instance == null) {
+				instance = new TelaDePedidos();
+			}
+			return instance;
+		}
+		
+		public void listarPedidos() {
+			((MenuDePedidos)menu).listarPedidos().executar();
+		}
+
+		
+	}
+
+}

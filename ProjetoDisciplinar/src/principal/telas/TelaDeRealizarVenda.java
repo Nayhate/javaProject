@@ -4,33 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 import principal.controladores.CadastroProduto;
-import principal.controladores.ControleVenda;
-import principal.dao.Banco;
-import principal.modelos.Adicional;
-import principal.modelos.Bebida;
+import principal.controladores.ControlePedido;
 import principal.modelos.Produto;
-import principal.modelos.Sorvete;
-import principal.modelos.Venda;
+import principal.modelos.Pedido;
+import principal.modelos.Pedido.Status;
 import principal.util.Prompt;
 
 public class TelaDeRealizarVenda {
-		
-	public static void mostrar() {
-		
-		Prompt.linhaEmBranco();
-		
-		Prompt.imprimir("[1] Iniciar Venda.");
-		Prompt.imprimir("[2] Voltar para a tela de gerenciamento.");
+	
+	public static void mostrar(){
+		Prompt.imprimir("[1] Listar produto(s).");
+		Prompt.imprimir("[2] Adicionar produto(s).");
+		Prompt.imprimir("[3] Alterar produto(s).");
+		Prompt.imprimir("[4] Excluir produto(s).");
+		Prompt.imprimir("[5] Voltar para a tela de gerenciamento.");
 		
 		
 		Integer opcao = Prompt.lerInteiro();
 		
 		switch(opcao){
 			case 1: {
-				TelaDeRealizarVenda.realizarVenda();
+				TelaDeRealizarVenda.mostrarSelecionarProdutos();
 				break;
 			}
 			case 2:{
+				TelaDeGerenciamentoDeProduto.adicionar();
+				break;
+			}
+			case 3:{
+				TelaDeGerenciamentoDeProduto.alterar();
+				break;
+			}
+			case 4:{
+				TelaDeGerenciamentoDeProduto.excluir();
+				break;
+			}
+			case 5:{
 				Prompt.imprimir("------------------------------------");
 				Prompt.linhaEmBranco();
 				Prompt.imprimir("Retornando ao Menu de Gerenciamento.");
@@ -49,54 +58,55 @@ public class TelaDeRealizarVenda {
 			}
 	}
 }
+	public static void mostrarSelecionarProdutos() {
 	
-public static void realizarVenda() {
-
-	CadastroProduto cadastro = CadastroProduto.getInstance();
-	
-	Prompt.linhaEmBranco();
-	Prompt.imprimir(Mensagem.MSG_LISTA_DE_PRODUTOS);
-	
-	List<Produto> produtos = cadastro.getProdutos();
-	
-	if (produtos.isEmpty()) {
-		Prompt.imprimir(Mensagem.MSG_NENHUM_PRODUTO); 
-	} else {
-		for (Produto produto : produtos) {
-			Prompt.imprimir(produto.toString());
-		}
-	}
-	
-	Prompt.linhaEmBranco();
-	Long id = (long) Prompt.lerInteiro(Mensagem.MSG_INFORME_ID);		
-	
-	if (id < 1) {
-		new TelaDeVendas().mostrar();
-	} else {
-		Produto produto = cadastro.buscar(id);
+		CadastroProduto cadastro = CadastroProduto.getInstance();
 		
-		if (produto != null) {
-			Venda.emMemoria.adicionar(produto);
-			Prompt.linhaEmBranco();
-			Prompt.imprimir(Mensagem.MSG_PRODUTO_SELECIONADO);
-			Prompt.linhaEmBranco();
-			Prompt.imprimir(Mensagem.MSG_SELECIONAR_MAIS);
-			Prompt.imprimir(Mensagem.MSG_SIM);
-			Prompt.imprimir(Mensagem.MSG_NAO);
-			int opcao = Prompt.lerInteiro();
-			if (opcao == 1) {
-				TelaDeVendas.mostrarSelecionarProdutos();
-			} else {
-				new TelaDeVendas().mostrar();
-			}
+		Prompt.linhaEmBranco();
+		Prompt.imprimir("Lista de Produtos");
+		
+		List<Produto> produtos = cadastro.getProdutos();
+		
+		if (produtos.isEmpty()) {
+			Prompt.imprimir("Lista Vazia"); 
 		} else {
-			Prompt.linhaEmBranco();
-			Prompt.imprimir(Mensagem.MSG_PRODUTO_NAO_ENCONTRADO);
-			Prompt.linhaEmBranco();
-			Prompt.pressionarEnter();
-			TelaDeVendas.mostrarSelecionarProdutos();
+			for (Produto produto : produtos) {
+				Prompt.imprimir(produto.toString());
+			}
+		}
+		
+		Prompt.linhaEmBranco();
+		Long id = (long) Prompt.lerInteiro("Informe o ID: ");		
+		
+		if (id < 1) {
+			TelaDeRealizarVenda.mostrar();
+		} else {
+			Produto produto = cadastro.buscar(id);
+			
+			if (produto != null) {
+				Pedido.emMemoria.adicionar(produto);
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Produto Selecionado");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Deseja Selecionar outro Produto?");
+				Prompt.imprimir("Sim [1]");
+				Prompt.imprimir("Não [2]");
+				int opcao = Prompt.lerInteiro();
+				if (opcao == 1) {
+					TelaDeRealizarVenda.mostrarSelecionarProdutos();
+				} else {
+					TelaDeRealizarVenda.mostrar();
+				}
+			} else {
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Produto não Encontrado");
+				Prompt.linhaEmBranco();
+				Prompt.pressionarEnter();
+				TelaDeRealizarVenda.mostrarSelecionarProdutos();
+			}
 		}
 	}
-  }
 }
+
+
 

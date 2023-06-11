@@ -121,6 +121,13 @@ public Funcionario() {
 	
 	@Override
 	public String toString() {
-		return "Funcionario {id = " + getId() + ", Data Adimissão = " + getDataAdmissao() + ", Horário Entrada = " + getHorarioEntrada() + ", Horário Saída" + getHorarioSaida() + ", Salario = "  + getSalario() + ", Nome = " + getNome() + ", CPF = " + getCPF() + ", E-mail = " + getEmail() +"}";
+		return "Funcionario {id = " + getId() + ","
+		+ " Data Adimissão = " + getDataAdmissao() + ","
+		+ " Horário Entrada = " + getHorarioEntrada() + ","
+		+ " Horário Saída = " + getHorarioSaida() + ","
+		+ " Salario = R$"  + getSalario() + ""
+		+ ", Nome = " + getNome() + ","
+		+ " CPF = " + getCPF() + ","
+		+ " E-mail = " + getEmail() +"}";
 	}
 }
