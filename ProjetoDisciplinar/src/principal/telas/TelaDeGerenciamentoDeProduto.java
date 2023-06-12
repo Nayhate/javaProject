@@ -148,7 +148,7 @@ public static void listar() {
 				TelaDeGerenciamentoDeProduto.mostrar();
 				break;
 			}
-			}
+		}
 }
 		
 //Alterar <-------------------------------------------------------------------->

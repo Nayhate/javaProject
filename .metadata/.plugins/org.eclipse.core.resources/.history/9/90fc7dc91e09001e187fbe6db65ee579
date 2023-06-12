@@ -1,0 +1,119 @@
+package principal.telas;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import principal.controladores.CadastroProduto;
+import principal.controladores.ControleDePedido;
+import principal.dao.Banco;
+import principal.modelos.Adicional;
+import principal.modelos.Bebida;
+import principal.modelos.Produto;
+import principal.modelos.Sorvete;
+import principal.modelos.Pedido;
+import principal.util.Prompt;
+
+public class TelaDeRealizarVenda {
+
+	public static void mostrar() {
+
+		Prompt.linhaEmBranco();
+		Prompt.imprimir("Tela de Vendas: ");
+
+		ControleDePedido cadastro = ControleDePedido.getInstance();
+		
+		if (pedido == null) {
+			pedido = new Pedido();
+		} else {
+			Prompt.linhaEmBranco();
+			Prompt.separador();
+			Prompt.imprimir("Montar Pedido ");
+			
+			if (pedido.cliente != null) {
+				Prompt.imprimir(pedido.cliente);
+			}
+			
+			for (Produto produto : pedido.produtos) {
+				Prompt.imprimir(produto);
+			}
+			Prompt.separador();
+		}
+		ControleDePedido.pedido = pedido;
+
+		Prompt.imprimir("Menu");
+		Prompt.imprimir("[1] Selecionar Produto");
+		Prompt.imprimir("[2] Finalizar Venda");
+		Prompt.imprimir("[3] Retornar ao Menu Principal");
+
+		Integer opcao = Prompt.lerInteiro();
+
+		switch (opcao) {
+			case 1: {
+				TelaDeRealizarVenda.selecionarProdutos();
+				break;
+			}
+			case 2: {
+				TelaDeRealizarVenda.finalizarVenda();
+				break;
+			}
+			case 3: {
+				TelaDeGerenciamento.mostrar();
+				break;
+			}
+		}
+	}
+	
+	private static void selecionarProdutos() {
+
+		Prompt.linhaEmBranco();
+		Prompt.imprimir("Lista de Produtos");
+		
+		CadastroProduto cadastro = CadastroProduto.getInstance();
+
+		List<Produto> produtos = cadastro.getProdutos();
+		if (produtos.isEmpty()) {
+			Prompt.imprimir("Lista Vazia"); 
+		} else {
+			for (Produto produto : produtos) {
+				Prompt.imprimir(produto.toString());
+			}
+		}			
+		Prompt.linhaEmBranco();
+		Long id = (long) Prompt.lerInteiro("Informe od ID: ");	
+		
+		if (id > 0){
+			
+			
+			Produto produto = CadastroProduto.buscar(id);
+			
+			if (produto != null) {
+				ControleDePedido.adicionar(produto);
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Produto Selecionado");
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Continuar?");
+				Prompt.imprimir("Sim [1]");
+				Prompt.imprimir("Não [2]");
+				int opcao = Prompt.lerInteiro();
+				if (opcao == 1) {
+					TelaDeRealizarVenda.selecionarProdutos();
+				}
+			} else {
+				Prompt.linhaEmBranco();
+				Prompt.imprimir("Produto não Encontrado");
+				Prompt.linhaEmBranco();
+				Prompt.pressionarEnter();
+			}
+		}
+		TelaDeRealizarVenda.mostrar();
+	}
+
+	private static void finalizarVenda() {
+		Pedido pedido = ControleDePedido.pedido;
+		ControleDePedido.adicionar(pedido);
+		ControleDePedido.pedido = null;
+		TelaDeGerenciamentoPedido.listar();
+	}
+}
+
+

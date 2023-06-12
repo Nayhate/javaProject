@@ -1541,3 +1541,454 @@
 2023-06-07 11:05:17,142 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
 2023-06-07 11:05:17,142 [Worker-73: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-06-07 11:05:17,144 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:45:09,925 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-06-12 08:46:13,954 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.2.3.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.2.3.Final
+2023-06-12 08:46:13,959 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2023-06-12 08:46:14,216 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:46:14,219 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:46:14,221 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:46:14,224 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:46:22,688 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:46:22,693 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:46:22,696 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:46:22,700 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:47:28,512 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:47:28,515 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:47:28,517 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:47:28,519 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:47:42,507 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:47:42,510 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:47:42,512 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:47:42,514 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:48:05,889 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:48:05,892 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:48:05,893 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:48:05,895 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:59:31,236 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:59:31,239 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:59:31,241 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:59:31,245 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 08:59:54,551 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:59:54,554 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 08:59:54,555 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 08:59:54,558 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:00:48,974 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:00:48,976 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:00:48,979 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:00:48,981 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:01:00,531 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:00,534 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:01:00,536 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:00,539 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:01:18,450 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:18,454 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:01:18,456 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:18,458 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:01:37,773 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:37,777 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:01:37,779 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:37,782 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:01:49,720 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:49,723 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:01:49,724 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:01:49,726 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:02:01,840 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:02:01,842 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:02:01,843 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:02:01,845 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:02:10,401 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:02:10,404 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:02:10,405 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:02:10,407 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:06:20,224 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:20,228 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:06:20,229 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:20,232 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:06:38,674 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:38,676 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:06:38,678 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:38,680 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:06:48,244 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:48,247 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:06:48,248 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:06:48,250 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:07:34,715 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:07:34,717 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:07:34,718 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:07:34,721 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:07:58,207 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:07:58,210 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:07:58,212 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:07:58,215 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:08:08,845 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:08:08,848 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:08:08,849 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:08:08,851 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:09:54,595 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:09:54,597 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:09:54,599 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:09:54,601 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:12:44,219 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:12:44,222 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:12:44,223 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:12:44,225 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:12:52,651 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:12:52,653 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:12:52,654 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:12:52,656 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:14:05,144 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:14:05,146 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:14:05,147 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:14:05,150 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:15:46,351 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:15:46,353 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:15:46,354 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:15:46,356 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:16:41,243 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:16:41,246 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:16:41,247 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:16:41,249 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:17:33,852 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:17:33,853 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:17:33,854 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:17:33,856 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:17:51,271 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:17:51,274 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:17:51,275 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:17:51,277 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:18:30,771 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:18:30,773 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:18:30,774 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:18:30,776 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:18:48,374 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:18:48,377 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:18:48,378 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:18:48,380 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:19:50,550 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:19:50,552 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:19:50,553 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:19:50,555 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:23:40,726 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:23:40,729 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:23:40,730 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:23:40,732 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:26:23,779 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:26:23,782 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:26:23,783 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:26:23,786 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:26:46,754 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:26:46,756 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:26:46,757 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:26:46,759 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:27:13,290 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:13,292 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:27:13,293 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:13,295 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:27:30,316 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:30,319 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:27:30,320 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:30,321 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:27:39,779 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:39,781 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:27:39,782 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:27:39,784 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:30:02,690 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:30:02,692 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:30:02,693 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:30:02,696 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:30:53,624 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:30:53,626 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:30:53,627 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:30:53,629 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:32:46,305 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:32:46,308 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:32:46,309 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:32:46,314 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:35:08,152 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:35:08,155 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:35:08,156 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:35:08,158 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:35:19,300 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:35:19,302 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:35:19,304 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:35:19,306 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:36:27,157 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:27,160 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:36:27,161 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:27,162 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:36:44,666 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:44,669 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:36:44,670 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:44,671 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:36:55,838 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:55,840 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:36:55,841 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:36:55,842 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:40:13,277 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:40:13,279 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:40:13,280 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:40:13,282 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:40:20,811 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:40:20,813 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:40:20,814 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:40:20,816 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:41:23,344 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:41:23,347 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:41:23,348 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:41:23,350 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:42:38,745 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:42:38,748 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:42:38,749 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:42:38,750 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:43:23,957 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:43:23,959 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:43:23,960 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:43:23,962 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:43:53,044 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:43:53,047 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:43:53,048 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:43:53,050 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:44:21,183 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:21,185 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:44:21,186 [Worker-52: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:21,188 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:44:24,009 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:24,012 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:44:24,013 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:24,016 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:44:35,647 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:35,649 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:44:35,650 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:35,652 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:44:45,559 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:45,561 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:44:45,562 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:44:45,564 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:45:22,605 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:45:22,608 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:45:22,608 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:45:22,610 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:45:30,521 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:45:30,523 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:45:30,525 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:45:30,527 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:48:01,999 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:48:02,002 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:48:02,002 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:48:02,004 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:49:49,105 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:49:49,108 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:49:49,108 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:49:49,110 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:50:03,103 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:50:03,106 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:50:03,107 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:50:03,109 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 09:51:22,800 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:51:22,803 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 09:51:22,804 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 09:51:22,806 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:03:17,296 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:03:17,300 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:03:17,302 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:03:17,305 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:06:21,882 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:06:21,897 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:06:21,898 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:06:21,901 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:11:22,013 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:22,016 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:11:22,017 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:22,020 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:11:33,241 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:33,244 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:11:33,246 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:33,249 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:11:48,598 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:48,602 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:11:48,604 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:11:48,607 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:13:36,315 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:13:36,318 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:13:36,320 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:13:36,333 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:16:46,532 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:16:46,535 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:16:46,537 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:16:46,540 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:17:43,797 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:17:43,800 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:17:43,802 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:17:43,805 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:17:54,927 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:17:54,931 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:17:54,932 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:17:54,936 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:18:01,931 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:01,933 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:18:01,935 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:01,938 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:18:13,802 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:13,806 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:18:13,807 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:13,810 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:18:22,776 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:22,779 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:18:22,780 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:22,784 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:18:56,628 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:56,632 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:18:56,634 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:18:56,637 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:19:05,889 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:19:05,892 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:19:05,894 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:19:05,897 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:19:10,059 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:19:10,063 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:19:10,064 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:19:10,066 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:20:09,994 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:20:09,996 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:20:09,997 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:20:09,999 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:20:17,735 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:20:17,737 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:20:17,738 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:20:17,740 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:14,131 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:14,133 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:14,134 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:14,136 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:23,113 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:23,116 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:23,117 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:23,119 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:33,183 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:33,185 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:33,186 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:33,188 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:48,300 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:48,303 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:48,303 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:48,305 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:54,609 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:54,612 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:54,613 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:54,615 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:21:58,670 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:58,673 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:21:58,674 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:21:58,676 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:22:09,248 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:22:09,250 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:22:09,251 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:22:09,254 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:22:27,682 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:22:27,684 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:22:27,686 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:22:27,688 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:23:12,566 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:12,568 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:23:12,569 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:12,570 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:23:27,414 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:27,417 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:23:27,418 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:27,420 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:23:45,293 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:45,295 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:23:45,296 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:23:45,298 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:24:23,155 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:24:23,158 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:24:23,159 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:24:23,162 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:24:34,894 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:24:34,896 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:24:34,897 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:24:34,899 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:25:06,602 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:06,605 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:25:06,606 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:06,608 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:25:18,608 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:18,611 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:25:18,611 [Worker-57: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:18,613 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:25:24,043 [Worker-58: Launching Programa] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:24,048 [Worker-58: Launching Programa] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:25:24,049 [Worker-58: Launching Programa] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:25:24,052 [Worker-58: Launching Programa] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:26:58,742 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:26:58,747 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:26:58,749 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:26:58,754 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:27:03,478 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:03,481 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:27:03,483 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:03,486 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:27:19,942 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:19,944 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:27:19,945 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:19,947 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:27:23,645 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:23,649 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:27:23,651 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:27:23,654 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:29:56,205 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:29:56,208 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:29:56,209 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:29:56,211 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:30:01,499 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:30:01,501 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:30:01,502 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:30:01,504 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:31:55,567 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:31:55,570 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:31:55,571 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:31:55,574 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:34:22,479 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:34:22,482 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:34:22,483 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:34:22,485 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:49:12,211 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:49:12,214 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:49:12,215 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:49:12,217 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:49:28,939 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:49:28,941 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:49:28,942 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:49:28,944 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:54:59,314 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:54:59,316 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:54:59,317 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:54:59,320 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:55:37,741 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:37,744 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:55:37,745 [Worker-70: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:37,747 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:55:42,402 [Worker-69: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:42,406 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:55:42,407 [Worker-69: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:42,409 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:55:51,824 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:51,826 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:55:51,827 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:55:51,829 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:56:19,973 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:56:19,976 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:56:19,977 [Worker-60: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:56:19,980 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:56:51,392 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:56:51,394 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:56:51,396 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:56:51,397 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:57:23,364 [Worker-71: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:57:23,366 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:57:23,367 [Worker-71: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:57:23,369 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources
+2023-06-12 10:57:29,707 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:57:29,710 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\main\resources
+2023-06-12 10:57:29,710 [Worker-66: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-12 10:57:29,712 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\_new_src\ds_ws\javaProject\ProjetoDisciplinar\src\test\resources

@@ -8,6 +8,7 @@ public class TelaDeGerenciamento {
 		
 		Prompt.imprimir("[1]: Ir para a tela de gerenciamento de produto.");
 		Prompt.imprimir("[2]: Ir para a tela de gerenciamento de funcionário.");
+		Prompt.imprimir("[3]: Ir para a tela de gerenciamento de pedido.");
 		Prompt.imprimir("[4]: Ir para a tela de realizar vendas.");
 		Prompt.imprimir("[5]: Sair do programa.");
 		
@@ -23,7 +24,11 @@ public class TelaDeGerenciamento {
 				TelaDeGerenciamentoDeFuncionario.mostrar();
 				break;
 			}
-			case 3:{
+			case 3: {
+				TelaDeGerenciamentoPedido.mostrar();
+				break;
+			}
+			case 4:{
 				TelaDeRealizarVenda.mostrar();
 				break;
 			}
